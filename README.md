@@ -1,7 +1,7 @@
 # Arc: Tell your story #
 *Marc Haumann, Frank Yoo, Vicki Tan*
 
-*Core use cases*
+**Core use cases**
 - NUO walk-through 
 - Photo capture with onion skin
 - Select photos 
@@ -10,7 +10,7 @@
 - Save/export video
 - Create new vignettes / access existing vignettes
 
-*Stretch goals*
+**Stretch goals**
 - Set frequency reminders
 - 2-sec videos
 - Adjust individual pictures (frame, filter, etc)
