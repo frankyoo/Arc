@@ -16,3 +16,8 @@
 - Adjust individual pictures (frame, filter, etc)
 - Zoom gif
 
+**Sketches**
+<img src="https://github.com/frankyoo/Arc/blob/master/designs/arc%20sketches.jpg?" />
+
+**Wireframes**
+<img src="https://github.com/frankyoo/Arc/blob/master/designs/arc_wires.png?raw=true" />
