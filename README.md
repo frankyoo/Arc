@@ -5,15 +5,17 @@
 - Camera
   - Photo capture with onion skin
   - NUO walk-through 
-- Editing
-  - Select photos 
+- Editing (Marc)
+  - Shake to undo
   - Preview video
   - Adjust video acceleration (arc)
   - Save/export video
-- Project management
+- Project management (Frank)
   - Create new vignettes / access existing vignettes
+  - Navigation
 
 **Stretch goals**
+- Select photos 
 - Set frequency reminders
 - 2-sec videos
 - Adjust individual pictures (frame, filter, etc)
