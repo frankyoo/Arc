@@ -2,13 +2,16 @@
 *Marc Haumann, Frank Yoo, Vicki Tan*
 
 **Core use cases**
-- NUO walk-through 
-- Photo capture with onion skin
-- Select photos 
-- Preview video
-- Adjust video acceleration (arc)
-- Save/export video
-- Create new vignettes / access existing vignettes
+- Camera
+  - Photo capture with onion skin
+  - NUO walk-through 
+- Editing
+  - Select photos 
+  - Preview video
+  - Adjust video acceleration (arc)
+  - Save/export video
+- Project management
+  - Create new vignettes / access existing vignettes
 
 **Stretch goals**
 - Set frequency reminders
