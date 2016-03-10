@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0199414999705C8EB369B1538965D96E /* PBJVision-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B6BCCBA7EBCA5772D9C366F172EAACC /* PBJVision-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A27EF3FB08BE0805DC3A2608423B087 /* PBJMediaWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = DD53FC7CB60F73A3AEC2965EF696A56B /* PBJMediaWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BBA5E01CA05DC777D96E53F12FEF8FC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648F74179744D512CBF4B76D680DB79B /* CoreMedia.framework */; };
+		1B0C00533019354C2F90C91D3875F4E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB6CF535EC9D7204CC3CCBCB95C4E9A /* Foundation.framework */; };
+		1B4706C522B3F1F5C946BCE7598B1CE4 /* PBJVision.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A261E98ED8671D0AF83096E4DE1142 /* PBJVision.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C1FC653243FFBA258BF266788FD1FB8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B995F321F5175392C95CD6538A8E40 /* MobileCoreServices.framework */; };
+		2287D946271705E1966C92214E44E5C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49673EB9CAD0ECBE7D84926353BC2934 /* UIKit.framework */; };
+		2533B351F028F67AA0455E4447B86504 /* PBJVision.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D79E58C1C760CD9CE43A5EAB63C3E8F /* PBJVision.m */; };
+		344A3301DDA38B8D6880509053D78FC8 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD8B08BA2EA21EBF11DF51863E11BFD /* CoreImage.framework */; };
+		43E5073F1F388B5EE539DC94B162940A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5A93003F179FA9FCC96B5229C17F59 /* OpenGLES.framework */; };
+		48452482799F373B705BEAF83938351B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FCB460BA50DF39F47B206F98FBCB0E /* CoreGraphics.framework */; };
+		5003FC9726D3A513A70C0C94912A2F61 /* Pods-Arc Camera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B0A549EF82AE84C4482681DA65A506 /* Pods-Arc Camera-dummy.m */; };
+		50C22097245F1420172D8F04E5F556B7 /* PBJVision-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 858B6A15DD0111F9B28F7D1EAB91420E /* PBJVision-dummy.m */; };
+		659190A61800FE1C46CEE66882AD240A /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 13EA931D3D1EE7A800E90632D7CDDB95 /* Shader.vsh */; };
+		6F4D4BC698693D97E34C67CC75966C33 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018C6AA9F914FF911BA4B18A9CA534E3 /* AVFoundation.framework */; };
+		7252812D207CC46E369660142B68DEDC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAB0F69EE8655AA92C119BD02373E90 /* ImageIO.framework */; };
+		8554ABEF0A7DC11ED03EE3E93E30A17B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0D91C369155B04CDE5DD431C9CD1B0 /* CoreVideo.framework */; };
+		9ACCD061D9B19007F40A1FC998A19474 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953AF2EF3149EFDFF64E0452D82948C0 /* QuartzCore.framework */; };
+		A1B1D8B188C30B74F16E164EDD8D286A /* PBJGLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDE6CAB7584D88BC8DBE7B1AC1B3E1E /* PBJGLProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBDAC71CE0CA447C597245455C290483 /* Pods-Arc Camera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C06F5019FE6A0ABC6B1E626D6A906BA /* Pods-Arc Camera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2369D9ED6D5D863E2BBDD9483FA841D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB6CF535EC9D7204CC3CCBCB95C4E9A /* Foundation.framework */; };
+		D117DDE8D46D0B7EE76129B25EC9702F /* PBJVisionUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D42E68B63E465CFF111F62DDD48700 /* PBJVisionUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7AD09F8254E26C6438694E645A68904 /* PBJVisionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C87E2471D8C48F93B1C45DA5F78AEA /* PBJVisionUtilities.m */; };
+		DB4DAD125AB92EA1A3701DA1882F4417 /* PBJMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A80F4023C18AF6314A1D9058703DF /* PBJMediaWriter.m */; };
+		E994C2F45E9E53BACA2A41CEDBA04DBF /* PBJGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BE1284AC465B9743C273A39EAD9 /* PBJGLProgram.m */; };
+		ECC58CC37FA78891DC252E199AB10BB8 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E2F454F4C5D1D605B011E4FE6188285A /* Shader.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CF7CC06378D65C34EB41659E73BF2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B1561BDE1A1C399883F737CC141A3C;
+			remoteInfo = PBJVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FCB460BA50DF39F47B206F98FBCB0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		018C6AA9F914FF911BA4B18A9CA534E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		02C87E2471D8C48F93B1C45DA5F78AEA /* PBJVisionUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PBJVisionUtilities.m; path = Source/PBJVisionUtilities.m; sourceTree = "<group>"; };
+		0DD8B08BA2EA21EBF11DF51863E11BFD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		13EA931D3D1EE7A800E90632D7CDDB95 /* Shader.vsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Source/Shaders/Shader.vsh; sourceTree = "<group>"; };
+		1EAB0F69EE8655AA92C119BD02373E90 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		202DBB16DAA8905AB37B9B5607A888A7 /* Pods_Arc_Camera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arc_Camera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A261E98ED8671D0AF83096E4DE1142 /* PBJVision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBJVision.h; path = Source/PBJVision.h; sourceTree = "<group>"; };
+		261C33F3D6024C35B37F64B3AEFC27EF /* Pods-Arc Camera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arc Camera-acknowledgements.plist"; sourceTree = "<group>"; };
+		28B995F321F5175392C95CD6538A8E40 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		2B6BCCBA7EBCA5772D9C366F172EAACC /* PBJVision-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PBJVision-umbrella.h"; sourceTree = "<group>"; };
+		315A80F4023C18AF6314A1D9058703DF /* PBJMediaWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PBJMediaWriter.m; path = Source/PBJMediaWriter.m; sourceTree = "<group>"; };
+		3B9ABC072AB609AF1C66B515325C284D /* PBJVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PBJVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C06F5019FE6A0ABC6B1E626D6A906BA /* Pods-Arc Camera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arc Camera-umbrella.h"; sourceTree = "<group>"; };
+		49673EB9CAD0ECBE7D84926353BC2934 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		53292A8FEB7B62A5AB46E7BFB55B32C1 /* PBJVision-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PBJVision-prefix.pch"; sourceTree = "<group>"; };
+		648F74179744D512CBF4B76D680DB79B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		66B0A549EF82AE84C4482681DA65A506 /* Pods-Arc Camera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arc Camera-dummy.m"; sourceTree = "<group>"; };
+		6DDE6CAB7584D88BC8DBE7B1AC1B3E1E /* PBJGLProgram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBJGLProgram.h; path = Source/PBJGLProgram.h; sourceTree = "<group>"; };
+		7AD1CF7CAD01B4F0B7EAC168DD0989F5 /* Pods-Arc Camera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arc Camera-resources.sh"; sourceTree = "<group>"; };
+		7D79E58C1C760CD9CE43A5EAB63C3E8F /* PBJVision.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PBJVision.m; path = Source/PBJVision.m; sourceTree = "<group>"; };
+		7E5A93003F179FA9FCC96B5229C17F59 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		81769A59D4EC6C6648A3884473E9E5E5 /* Pods-Arc Camera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arc Camera-frameworks.sh"; sourceTree = "<group>"; };
+		858B6A15DD0111F9B28F7D1EAB91420E /* PBJVision-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PBJVision-dummy.m"; sourceTree = "<group>"; };
+		953AF2EF3149EFDFF64E0452D82948C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		99D42E68B63E465CFF111F62DDD48700 /* PBJVisionUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBJVisionUtilities.h; path = Source/PBJVisionUtilities.h; sourceTree = "<group>"; };
+		A48BED23852DA1A8FD6B8D03E41AA3F4 /* Pods-Arc Camera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Arc Camera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B2FCCF00BF23DCFD193D62BD1C1EF0A3 /* PBJVision.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PBJVision.xcconfig; sourceTree = "<group>"; };
+		B6BF8BDC90BA48CED1262C1BB2147656 /* Pods-Arc Camera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arc Camera.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE05E3BCD038DDF3901A03CB25E67FBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CF1BE1284AC465B9743C273A39EAD9 /* PBJGLProgram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PBJGLProgram.m; path = Source/PBJGLProgram.m; sourceTree = "<group>"; };
+		CBB6CF535EC9D7204CC3CCBCB95C4E9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D951A2A885013D3ECD6B27E29064DA18 /* Pods-Arc Camera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arc Camera.release.xcconfig"; sourceTree = "<group>"; };
+		DD53FC7CB60F73A3AEC2965EF696A56B /* PBJMediaWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBJMediaWriter.h; path = Source/PBJMediaWriter.h; sourceTree = "<group>"; };
+		E2F454F4C5D1D605B011E4FE6188285A /* Shader.fsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Source/Shaders/Shader.fsh; sourceTree = "<group>"; };
+		E8B9655AEB934263AA2D08146860A167 /* PBJVision.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PBJVision.modulemap; sourceTree = "<group>"; };
+		EF0D91C369155B04CDE5DD431C9CD1B0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		F13BAC211AC25A1316E410907F9B91A5 /* Pods-Arc Camera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Arc Camera.modulemap"; sourceTree = "<group>"; };
+		FA3BC6E64E17CCA0DC4F1EC95FFD4049 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		466FD0F9D3E2D8FF54C689D19C1D53B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4D4BC698693D97E34C67CC75966C33 /* AVFoundation.framework in Frameworks */,
+				48452482799F373B705BEAF83938351B /* CoreGraphics.framework in Frameworks */,
+				344A3301DDA38B8D6880509053D78FC8 /* CoreImage.framework in Frameworks */,
+				0BBA5E01CA05DC777D96E53F12FEF8FC /* CoreMedia.framework in Frameworks */,
+				8554ABEF0A7DC11ED03EE3E93E30A17B /* CoreVideo.framework in Frameworks */,
+				C2369D9ED6D5D863E2BBDD9483FA841D /* Foundation.framework in Frameworks */,
+				7252812D207CC46E369660142B68DEDC /* ImageIO.framework in Frameworks */,
+				1C1FC653243FFBA258BF266788FD1FB8 /* MobileCoreServices.framework in Frameworks */,
+				43E5073F1F388B5EE539DC94B162940A /* OpenGLES.framework in Frameworks */,
+				9ACCD061D9B19007F40A1FC998A19474 /* QuartzCore.framework in Frameworks */,
+				2287D946271705E1966C92214E44E5C0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F742A231B83851E16978624F31CD9CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B0C00533019354C2F90C91D3875F4E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12805A68C101D65297FB01075F29CC5B /* PBJVision */ = {
+			isa = PBXGroup;
+			children = (
+				6DDE6CAB7584D88BC8DBE7B1AC1B3E1E /* PBJGLProgram.h */,
+				C7CF1BE1284AC465B9743C273A39EAD9 /* PBJGLProgram.m */,
+				DD53FC7CB60F73A3AEC2965EF696A56B /* PBJMediaWriter.h */,
+				315A80F4023C18AF6314A1D9058703DF /* PBJMediaWriter.m */,
+				23A261E98ED8671D0AF83096E4DE1142 /* PBJVision.h */,
+				7D79E58C1C760CD9CE43A5EAB63C3E8F /* PBJVision.m */,
+				99D42E68B63E465CFF111F62DDD48700 /* PBJVisionUtilities.h */,
+				02C87E2471D8C48F93B1C45DA5F78AEA /* PBJVisionUtilities.m */,
+				51F2F078B87A0F79232B4774523CBCF2 /* Resources */,
+				50F325E37E82B81CEC559D3CC44CB5B7 /* Support Files */,
+			);
+			path = PBJVision;
+			sourceTree = "<group>";
+		};
+		2E4D023113C96232D79C952D3956BE01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12805A68C101D65297FB01075F29CC5B /* PBJVision */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50F325E37E82B81CEC559D3CC44CB5B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE05E3BCD038DDF3901A03CB25E67FBE /* Info.plist */,
+				E8B9655AEB934263AA2D08146860A167 /* PBJVision.modulemap */,
+				B2FCCF00BF23DCFD193D62BD1C1EF0A3 /* PBJVision.xcconfig */,
+				858B6A15DD0111F9B28F7D1EAB91420E /* PBJVision-dummy.m */,
+				53292A8FEB7B62A5AB46E7BFB55B32C1 /* PBJVision-prefix.pch */,
+				2B6BCCBA7EBCA5772D9C366F172EAACC /* PBJVision-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PBJVision";
+			sourceTree = "<group>";
+		};
+		51F2F078B87A0F79232B4774523CBCF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2F454F4C5D1D605B011E4FE6188285A /* Shader.fsh */,
+				13EA931D3D1EE7A800E90632D7CDDB95 /* Shader.vsh */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		75BB7918241A0161727B47BD9FD13992 /* Pods-Arc Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BC6E64E17CCA0DC4F1EC95FFD4049 /* Info.plist */,
+				F13BAC211AC25A1316E410907F9B91A5 /* Pods-Arc Camera.modulemap */,
+				A48BED23852DA1A8FD6B8D03E41AA3F4 /* Pods-Arc Camera-acknowledgements.markdown */,
+				261C33F3D6024C35B37F64B3AEFC27EF /* Pods-Arc Camera-acknowledgements.plist */,
+				66B0A549EF82AE84C4482681DA65A506 /* Pods-Arc Camera-dummy.m */,
+				81769A59D4EC6C6648A3884473E9E5E5 /* Pods-Arc Camera-frameworks.sh */,
+				7AD1CF7CAD01B4F0B7EAC168DD0989F5 /* Pods-Arc Camera-resources.sh */,
+				3C06F5019FE6A0ABC6B1E626D6A906BA /* Pods-Arc Camera-umbrella.h */,
+				B6BF8BDC90BA48CED1262C1BB2147656 /* Pods-Arc Camera.debug.xcconfig */,
+				D951A2A885013D3ECD6B27E29064DA18 /* Pods-Arc Camera.release.xcconfig */,
+			);
+			name = "Pods-Arc Camera";
+			path = "Target Support Files/Pods-Arc Camera";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				EB57DDB3388FBC701046A1E93218737F /* Frameworks */,
+				2E4D023113C96232D79C952D3956BE01 /* Pods */,
+				97E5851359B7267DC83FC8531D5D80DC /* Products */,
+				99E862A59FDCC57B4861634A1B61D22E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		97E5851359B7267DC83FC8531D5D80DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B9ABC072AB609AF1C66B515325C284D /* PBJVision.framework */,
+				202DBB16DAA8905AB37B9B5607A888A7 /* Pods_Arc_Camera.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99E862A59FDCC57B4861634A1B61D22E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75BB7918241A0161727B47BD9FD13992 /* Pods-Arc Camera */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B047E4A6727871CCB6BE51D806C54B86 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				018C6AA9F914FF911BA4B18A9CA534E3 /* AVFoundation.framework */,
+				00FCB460BA50DF39F47B206F98FBCB0E /* CoreGraphics.framework */,
+				0DD8B08BA2EA21EBF11DF51863E11BFD /* CoreImage.framework */,
+				648F74179744D512CBF4B76D680DB79B /* CoreMedia.framework */,
+				EF0D91C369155B04CDE5DD431C9CD1B0 /* CoreVideo.framework */,
+				CBB6CF535EC9D7204CC3CCBCB95C4E9A /* Foundation.framework */,
+				1EAB0F69EE8655AA92C119BD02373E90 /* ImageIO.framework */,
+				28B995F321F5175392C95CD6538A8E40 /* MobileCoreServices.framework */,
+				7E5A93003F179FA9FCC96B5229C17F59 /* OpenGLES.framework */,
+				953AF2EF3149EFDFF64E0452D82948C0 /* QuartzCore.framework */,
+				49673EB9CAD0ECBE7D84926353BC2934 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB57DDB3388FBC701046A1E93218737F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B047E4A6727871CCB6BE51D806C54B86 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0CFD4A64A719FF1129CCF16FB14C9A7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B1D8B188C30B74F16E164EDD8D286A /* PBJGLProgram.h in Headers */,
+				0A27EF3FB08BE0805DC3A2608423B087 /* PBJMediaWriter.h in Headers */,
+				0199414999705C8EB369B1538965D96E /* PBJVision-umbrella.h in Headers */,
+				1B4706C522B3F1F5C946BCE7598B1CE4 /* PBJVision.h in Headers */,
+				D117DDE8D46D0B7EE76129B25EC9702F /* PBJVisionUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659F0C44E67E26EC834A92EB8D5F2B23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBDAC71CE0CA447C597245455C290483 /* Pods-Arc Camera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		079922F29D18AB1978E4C7D44EAC0574 /* Pods-Arc Camera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3116119266AE0FD3C60B3047147D387F /* Build configuration list for PBXNativeTarget "Pods-Arc Camera" */;
+			buildPhases = (
+				24F56E929D94BDA18A3051294FFA5A48 /* Sources */,
+				7F742A231B83851E16978624F31CD9CF /* Frameworks */,
+				659F0C44E67E26EC834A92EB8D5F2B23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07BCA57131D22A9D654AB57A07DB7EDD /* PBXTargetDependency */,
+			);
+			name = "Pods-Arc Camera";
+			productName = "Pods-Arc Camera";
+			productReference = 202DBB16DAA8905AB37B9B5607A888A7 /* Pods_Arc_Camera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15B1561BDE1A1C399883F737CC141A3C /* PBJVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E36BC26A102C6BA5E969E87D7050AC64 /* Build configuration list for PBXNativeTarget "PBJVision" */;
+			buildPhases = (
+				A41312F73001E722B91316A186AA5386 /* Sources */,
+				466FD0F9D3E2D8FF54C689D19C1D53B8 /* Frameworks */,
+				0CFD4A64A719FF1129CCF16FB14C9A7A /* Headers */,
+				E0575F427D530FFDC71197BBD1D5F7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PBJVision;
+			productName = PBJVision;
+			productReference = 3B9ABC072AB609AF1C66B515325C284D /* PBJVision.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 97E5851359B7267DC83FC8531D5D80DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15B1561BDE1A1C399883F737CC141A3C /* PBJVision */,
+				079922F29D18AB1978E4C7D44EAC0574 /* Pods-Arc Camera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0575F427D530FFDC71197BBD1D5F7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC58CC37FA78891DC252E199AB10BB8 /* Shader.fsh in Resources */,
+				659190A61800FE1C46CEE66882AD240A /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F56E929D94BDA18A3051294FFA5A48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5003FC9726D3A513A70C0C94912A2F61 /* Pods-Arc Camera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41312F73001E722B91316A186AA5386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E994C2F45E9E53BACA2A41CEDBA04DBF /* PBJGLProgram.m in Sources */,
+				DB4DAD125AB92EA1A3701DA1882F4417 /* PBJMediaWriter.m in Sources */,
+				50C22097245F1420172D8F04E5F556B7 /* PBJVision-dummy.m in Sources */,
+				2533B351F028F67AA0455E4447B86504 /* PBJVision.m in Sources */,
+				D7AD09F8254E26C6438694E645A68904 /* PBJVisionUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07BCA57131D22A9D654AB57A07DB7EDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PBJVision;
+			target = 15B1561BDE1A1C399883F737CC141A3C /* PBJVision */;
+			targetProxy = 3CF7CC06378D65C34EB41659E73BF2E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A271F3C3465203FEC2A59A3559B0BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D951A2A885013D3ECD6B27E29064DA18 /* Pods-Arc Camera.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Arc Camera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arc Camera/Pods-Arc Camera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Arc_Camera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66DCF9C88AB9A830E5A79CB2BDED3AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BF8BDC90BA48CED1262C1BB2147656 /* Pods-Arc Camera.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Arc Camera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arc Camera/Pods-Arc Camera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Arc_Camera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE4761B7A9BA727DBA70D14F2E10F655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FCCF00BF23DCFD193D62BD1C1EF0A3 /* PBJVision.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PBJVision/PBJVision-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PBJVision/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PBJVision/PBJVision.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PBJVision;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3035B75874CC7C3385EDFE4CB60C27E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2FCCF00BF23DCFD193D62BD1C1EF0A3 /* PBJVision.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PBJVision/PBJVision-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PBJVision/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PBJVision/PBJVision.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PBJVision;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3116119266AE0FD3C60B3047147D387F /* Build configuration list for PBXNativeTarget "Pods-Arc Camera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66DCF9C88AB9A830E5A79CB2BDED3AE3 /* Debug */,
+				4A271F3C3465203FEC2A59A3559B0BDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E36BC26A102C6BA5E969E87D7050AC64 /* Build configuration list for PBXNativeTarget "PBJVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4761B7A9BA727DBA70D14F2E10F655 /* Debug */,
+				F3035B75874CC7C3385EDFE4CB60C27E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
