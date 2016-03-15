@@ -13,12 +13,18 @@ class ViewController: UIViewController, PBJVisionDelegate {
     
     @IBOutlet weak var thumbnailView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
+    @IBOutlet weak var blurEffectView: UIVisualEffectView!
+
     
     let vision = PBJVision.sharedInstance()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        blurEffectView.frame = CGRect(x: (view.frame.width / 2 ) - 50, y: 500, width: 100, height: 100)
+        blurEffectView.layer.cornerRadius = 50
+        blurEffectView.clipsToBounds = true
         
         vision.delegate = self
         vision.cameraMode = PBJCameraMode.Photo
@@ -28,12 +34,11 @@ class ViewController: UIViewController, PBJVisionDelegate {
         
         vision.startPreview()
         
-        
-        
         let layer = vision.previewLayer
         layer.frame = cameraView.bounds
         layer.videoGravity = AVLayerVideoGravityResizeAspectFill
         cameraView.layer.addSublayer(layer)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -53,5 +58,15 @@ class ViewController: UIViewController, PBJVisionDelegate {
         thumbnailView.image = image
         vision.startPreview()
     }
+    
+    @IBAction func onFlipButton(sender: AnyObject) {
+        if vision.cameraDevice == PBJCameraDevice.Front {
+            vision.cameraDevice = PBJCameraDevice.Back
+        } else {
+            vision.cameraDevice = PBJCameraDevice.Front
+        }
+    }
+    
+    
 }
 
