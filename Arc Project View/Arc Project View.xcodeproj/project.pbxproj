@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C28B1AD51C978C03009882C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AD41C978C03009882C3 /* AppDelegate.swift */; };
+		C28B1AD71C978C03009882C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AD61C978C03009882C3 /* ViewController.swift */; };
+		C28B1ADA1C978C03009882C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B1AD81C978C03009882C3 /* Main.storyboard */; };
+		C28B1ADC1C978C03009882C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B1ADB1C978C03009882C3 /* Assets.xcassets */; };
+		C28B1ADF1C978C03009882C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */; };
+		C28B1AEA1C978C03009882C3 /* Arc_Project_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AE91C978C03009882C3 /* Arc_Project_ViewTests.swift */; };
+		C28B1AF51C978C03009882C3 /* Arc_Project_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AF41C978C03009882C3 /* Arc_Project_ViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C28B1AE61C978C03009882C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28B1AC91C978C03009882C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28B1AD01C978C03009882C3;
+			remoteInfo = "Arc Project View";
+		};
+		C28B1AF11C978C03009882C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28B1AC91C978C03009882C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28B1AD01C978C03009882C3;
+			remoteInfo = "Arc Project View";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C28B1AD11C978C03009882C3 /* Arc Project View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arc Project View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B1AD41C978C03009882C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C28B1AD61C978C03009882C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C28B1AD91C978C03009882C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C28B1ADB1C978C03009882C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C28B1ADE1C978C03009882C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C28B1AE01C978C03009882C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B1AE51C978C03009882C3 /* Arc Project ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arc Project ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B1AE91C978C03009882C3 /* Arc_Project_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arc_Project_ViewTests.swift; sourceTree = "<group>"; };
+		C28B1AEB1C978C03009882C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B1AF01C978C03009882C3 /* Arc Project ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arc Project ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B1AF41C978C03009882C3 /* Arc_Project_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arc_Project_ViewUITests.swift; sourceTree = "<group>"; };
+		C28B1AF61C978C03009882C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C28B1ACE1C978C03009882C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B1AE21C978C03009882C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B1AED1C978C03009882C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28B1AC81C978C03009882C3 = {
+			isa = PBXGroup;
+			children = (
+				C28B1AD31C978C03009882C3 /* Arc Project View */,
+				C28B1AE81C978C03009882C3 /* Arc Project ViewTests */,
+				C28B1AF31C978C03009882C3 /* Arc Project ViewUITests */,
+				C28B1AD21C978C03009882C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C28B1AD21C978C03009882C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28B1AD11C978C03009882C3 /* Arc Project View.app */,
+				C28B1AE51C978C03009882C3 /* Arc Project ViewTests.xctest */,
+				C28B1AF01C978C03009882C3 /* Arc Project ViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28B1AD31C978C03009882C3 /* Arc Project View */ = {
+			isa = PBXGroup;
+			children = (
+				C28B1AD41C978C03009882C3 /* AppDelegate.swift */,
+				C28B1AD61C978C03009882C3 /* ViewController.swift */,
+				C28B1AD81C978C03009882C3 /* Main.storyboard */,
+				C28B1ADB1C978C03009882C3 /* Assets.xcassets */,
+				C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */,
+				C28B1AE01C978C03009882C3 /* Info.plist */,
+			);
+			path = "Arc Project View";
+			sourceTree = "<group>";
+		};
+		C28B1AE81C978C03009882C3 /* Arc Project ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C28B1AE91C978C03009882C3 /* Arc_Project_ViewTests.swift */,
+				C28B1AEB1C978C03009882C3 /* Info.plist */,
+			);
+			path = "Arc Project ViewTests";
+			sourceTree = "<group>";
+		};
+		C28B1AF31C978C03009882C3 /* Arc Project ViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C28B1AF41C978C03009882C3 /* Arc_Project_ViewUITests.swift */,
+				C28B1AF61C978C03009882C3 /* Info.plist */,
+			);
+			path = "Arc Project ViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C28B1AD01C978C03009882C3 /* Arc Project View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B1AF91C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project View" */;
+			buildPhases = (
+				C28B1ACD1C978C03009882C3 /* Sources */,
+				C28B1ACE1C978C03009882C3 /* Frameworks */,
+				C28B1ACF1C978C03009882C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arc Project View";
+			productName = "Arc Project View";
+			productReference = C28B1AD11C978C03009882C3 /* Arc Project View.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C28B1AE41C978C03009882C3 /* Arc Project ViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B1AFC1C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project ViewTests" */;
+			buildPhases = (
+				C28B1AE11C978C03009882C3 /* Sources */,
+				C28B1AE21C978C03009882C3 /* Frameworks */,
+				C28B1AE31C978C03009882C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28B1AE71C978C03009882C3 /* PBXTargetDependency */,
+			);
+			name = "Arc Project ViewTests";
+			productName = "Arc Project ViewTests";
+			productReference = C28B1AE51C978C03009882C3 /* Arc Project ViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C28B1AEF1C978C03009882C3 /* Arc Project ViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B1AFF1C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project ViewUITests" */;
+			buildPhases = (
+				C28B1AEC1C978C03009882C3 /* Sources */,
+				C28B1AED1C978C03009882C3 /* Frameworks */,
+				C28B1AEE1C978C03009882C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28B1AF21C978C03009882C3 /* PBXTargetDependency */,
+			);
+			name = "Arc Project ViewUITests";
+			productName = "Arc Project ViewUITests";
+			productReference = C28B1AF01C978C03009882C3 /* Arc Project ViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C28B1AC91C978C03009882C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Frank Yoo";
+				TargetAttributes = {
+					C28B1AD01C978C03009882C3 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					C28B1AE41C978C03009882C3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C28B1AD01C978C03009882C3;
+					};
+					C28B1AEF1C978C03009882C3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C28B1AD01C978C03009882C3;
+					};
+				};
+			};
+			buildConfigurationList = C28B1ACC1C978C03009882C3 /* Build configuration list for PBXProject "Arc Project View" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C28B1AC81C978C03009882C3;
+			productRefGroup = C28B1AD21C978C03009882C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C28B1AD01C978C03009882C3 /* Arc Project View */,
+				C28B1AE41C978C03009882C3 /* Arc Project ViewTests */,
+				C28B1AEF1C978C03009882C3 /* Arc Project ViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C28B1ACF1C978C03009882C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B1ADF1C978C03009882C3 /* LaunchScreen.storyboard in Resources */,
+				C28B1ADC1C978C03009882C3 /* Assets.xcassets in Resources */,
+				C28B1ADA1C978C03009882C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B1AE31C978C03009882C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B1AEE1C978C03009882C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C28B1ACD1C978C03009882C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B1AD71C978C03009882C3 /* ViewController.swift in Sources */,
+				C28B1AD51C978C03009882C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B1AE11C978C03009882C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B1AEA1C978C03009882C3 /* Arc_Project_ViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B1AEC1C978C03009882C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B1AF51C978C03009882C3 /* Arc_Project_ViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C28B1AE71C978C03009882C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28B1AD01C978C03009882C3 /* Arc Project View */;
+			targetProxy = C28B1AE61C978C03009882C3 /* PBXContainerItemProxy */;
+		};
+		C28B1AF21C978C03009882C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28B1AD01C978C03009882C3 /* Arc Project View */;
+			targetProxy = C28B1AF11C978C03009882C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C28B1AD81C978C03009882C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C28B1AD91C978C03009882C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C28B1ADE1C978C03009882C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C28B1AF71C978C03009882C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C28B1AF81C978C03009882C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C28B1AFA1C978C03009882C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Arc Project View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Yoo.Arc-Project-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C28B1AFB1C978C03009882C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Arc Project View/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Yoo.Arc-Project-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C28B1AFD1C978C03009882C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Arc Project ViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Yoo.Arc-Project-ViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arc Project View.app/Arc Project View";
+			};
+			name = Debug;
+		};
+		C28B1AFE1C978C03009882C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Arc Project ViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Yoo.Arc-Project-ViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arc Project View.app/Arc Project View";
+			};
+			name = Release;
+		};
+		C28B1B001C978C03009882C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Arc Project ViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Yoo.Arc-Project-ViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Arc Project View";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C28B1B011C978C03009882C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Arc Project ViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Yoo.Arc-Project-ViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Arc Project View";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C28B1ACC1C978C03009882C3 /* Build configuration list for PBXProject "Arc Project View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B1AF71C978C03009882C3 /* Debug */,
+				C28B1AF81C978C03009882C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28B1AF91C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B1AFA1C978C03009882C3 /* Debug */,
+				C28B1AFB1C978C03009882C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C28B1AFC1C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project ViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B1AFD1C978C03009882C3 /* Debug */,
+				C28B1AFE1C978C03009882C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C28B1AFF1C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project ViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B1B001C978C03009882C3 /* Debug */,
+				C28B1B011C978C03009882C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C28B1AC91C978C03009882C3 /* Project object */;
+}
