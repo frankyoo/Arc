@@ -15,6 +15,7 @@
 		C9C90DA01C8E615600EC5945 /* libraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C90D9F1C8E615600EC5945 /* libraryTests.swift */; };
 		C9C90DAB1C8E615600EC5945 /* libraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C90DAA1C8E615600EC5945 /* libraryUITests.swift */; };
 		C9C90DB91C8E622100EC5945 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C90DB81C8E622100EC5945 /* LibraryViewController.swift */; };
+		C9C90DBD1C8E66FE00EC5945 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C90DBC1C8E66FE00EC5945 /* ProjectTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C9C90DAA1C8E615600EC5945 /* libraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libraryUITests.swift; sourceTree = "<group>"; };
 		C9C90DAC1C8E615600EC5945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C90DB81C8E622100EC5945 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		C9C90DBC1C8E66FE00EC5945 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = ../ProjectTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		C9C90D891C8E615600EC5945 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				C9C90DBC1C8E66FE00EC5945 /* ProjectTableViewCell.swift */,
 				C9C90D8A1C8E615600EC5945 /* AppDelegate.swift */,
 				C9C90D8C1C8E615600EC5945 /* ViewController.swift */,
 				C9C90D8E1C8E615600EC5945 /* Main.storyboard */,
@@ -262,6 +265,7 @@
 				C9C90D8D1C8E615600EC5945 /* ViewController.swift in Sources */,
 				C9C90DB91C8E622100EC5945 /* LibraryViewController.swift in Sources */,
 				C9C90D8B1C8E615600EC5945 /* AppDelegate.swift in Sources */,
+				C9C90DBD1C8E66FE00EC5945 /* ProjectTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
