@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4CF9C47E629CA48B4E377813 /* Pods_Arc_Camera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D56CD3CA5673FD3D29BDDE /* Pods_Arc_Camera.framework */; };
+		D761E4DE1C9A28AB00083628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D761E4DD1C9A28AB00083628 /* Assets.xcassets */; };
 		D7A5EC7F1C8E66A30090F87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC7E1C8E66A30090F87F /* AppDelegate.swift */; };
 		D7A5EC811C8E66A30090F87F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC801C8E66A30090F87F /* ViewController.swift */; };
 		D7A5EC841C8E66A30090F87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A5EC821C8E66A30090F87F /* Main.storyboard */; };
-		D7A5EC861C8E66A30090F87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A5EC851C8E66A30090F87F /* Assets.xcassets */; };
 		D7A5EC891C8E66A30090F87F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A5EC871C8E66A30090F87F /* LaunchScreen.storyboard */; };
 		D7A5EC941C8E66A30090F87F /* Arc_CameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC931C8E66A30090F87F /* Arc_CameraTests.swift */; };
 		D7A5EC9F1C8E66A30090F87F /* Arc_CameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC9E1C8E66A30090F87F /* Arc_CameraUITests.swift */; };
@@ -38,11 +38,11 @@
 		11A6E87D8B39654A4A455906 /* Pods-Arc Camera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arc Camera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Arc Camera/Pods-Arc Camera.debug.xcconfig"; sourceTree = "<group>"; };
 		42F4A9275BA7983E95D60CEB /* Pods-Arc Camera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arc Camera.release.xcconfig"; path = "Pods/Target Support Files/Pods-Arc Camera/Pods-Arc Camera.release.xcconfig"; sourceTree = "<group>"; };
 		49D56CD3CA5673FD3D29BDDE /* Pods_Arc_Camera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arc_Camera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D761E4DD1C9A28AB00083628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A5EC7B1C8E66A30090F87F /* Arc Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arc Camera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A5EC7E1C8E66A30090F87F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7A5EC801C8E66A30090F87F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7A5EC831C8E66A30090F87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D7A5EC851C8E66A30090F87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A5EC881C8E66A30090F87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A5EC8A1C8E66A30090F87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A5EC8F1C8E66A30090F87F /* Arc CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arc CameraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +124,7 @@
 				D7A5EC7E1C8E66A30090F87F /* AppDelegate.swift */,
 				D7A5EC801C8E66A30090F87F /* ViewController.swift */,
 				D7A5EC821C8E66A30090F87F /* Main.storyboard */,
-				D7A5EC851C8E66A30090F87F /* Assets.xcassets */,
+				D761E4DD1C9A28AB00083628 /* Assets.xcassets */,
 				D7A5EC871C8E66A30090F87F /* LaunchScreen.storyboard */,
 				D7A5EC8A1C8E66A30090F87F /* Info.plist */,
 			);
@@ -260,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A5EC891C8E66A30090F87F /* LaunchScreen.storyboard in Resources */,
-				D7A5EC861C8E66A30090F87F /* Assets.xcassets in Resources */,
+				D761E4DE1C9A28AB00083628 /* Assets.xcassets in Resources */,
 				D7A5EC841C8E66A30090F87F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

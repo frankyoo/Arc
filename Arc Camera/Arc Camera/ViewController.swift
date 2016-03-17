@@ -14,17 +14,23 @@ class ViewController: UIViewController, PBJVisionDelegate {
     @IBOutlet weak var thumbnailView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var blurEffectView: UIVisualEffectView!
-
     
     let vision = PBJVision.sharedInstance()
-
+    
+    var photoImages: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        blurEffectView.frame = CGRect(x: (view.frame.width / 2 ) - 50, y: 500, width: 100, height: 100)
+        
+        blurEffectView.frame = CGRect(x: (view.frame.width / 2 ) - 50, y: 550, width: 100, height: 100)
         blurEffectView.layer.cornerRadius = 50
         blurEffectView.clipsToBounds = true
+        blurEffectView.layer.borderColor = UIColor.grayColor().CGColor
+        blurEffectView.layer.borderWidth = 0.5
+        blurEffectView.layer.shadowColor = UIColor.blackColor().CGColor
+        blurEffectView.layer.shadowOffset = CGSizeMake(5, 5)
+        
         
         vision.delegate = self
         vision.cameraMode = PBJCameraMode.Photo
@@ -47,6 +53,16 @@ class ViewController: UIViewController, PBJVisionDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onUndoTap(sender: AnyObject) {
+        if photoImages.count >= 2 {
+            let priorPhoto = photoImages[photoImages.count - 2]
+            thumbnailView.image = priorPhoto
+            photoImages.removeAtIndex(photoImages.count - 1)
+        } else {
+            photoImages.removeAll()
+            thumbnailView.image = nil
+        }
+    }
     
     @IBAction func onCaptureButton(sender: AnyObject) {
         vision.capturePhoto()
@@ -57,6 +73,8 @@ class ViewController: UIViewController, PBJVisionDelegate {
         
         thumbnailView.image = image
         vision.startPreview()
+        photoImages.append(image)
+        print(photoImages.count)
     }
     
     @IBAction func onFlipButton(sender: AnyObject) {
