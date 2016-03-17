@@ -13,13 +13,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="photo_averie" id="iQP-Ea-xck">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="viQ-G6-LBl" appends="YES" id="Fdj-nU-Xqm"/>
+                                </connections>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K0L-a1-55O">
-                                <rect key="frame" x="214" y="478" width="106" height="90"/>
+                                <rect key="frame" x="240" y="498" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="share"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kI2-q1-yR5">
-                                <rect key="frame" x="0.0" y="478" width="106" height="90"/>
+                                <rect key="frame" x="30" y="498" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add"/>
                             </button>
@@ -34,32 +42,88 @@
                                 <rect key="frame" x="0.0" y="20" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="didPressBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6v-Gk-XVE"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eI8-ek-4YH">
+                                <rect key="frame" x="142" y="508" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arc_over"/>
+                                <connections>
+                                    <action selector="didPressPanelOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuH-Wc-oF7"/>
+                                    <segue destination="w1m-8z-Lo6" kind="modal" identifier="panelSegue" id="GOT-UB-Xut"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="openPanelButton" destination="eI8-ek-4YH" id="gin-w1-KQP"/>
+                        <outlet property="projectNameField" destination="Cw2-2u-f5y" id="cQg-DY-WOQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="viQ-G6-LBl">
+                    <connections>
+                        <action selector="didTapBackground:" destination="BYZ-38-t0r" id="DNj-LK-dY9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+        <!--Panel View Controller-->
+        <scene sceneID="TkG-Xs-CAT">
+            <objects>
+                <viewController id="w1m-8z-Lo6" customClass="panelViewController" customModule="Arc_Project_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sdc-Rw-9OZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arc_panel" id="lz7-fB-3Ih">
                                 <rect key="frame" x="64" y="422" width="192" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eI8-ek-4YH">
-                                <rect key="frame" x="145" y="508" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LaN-y8-QJC">
+                                <rect key="frame" x="142" y="505" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arc_over"/>
+                                <state key="normal" image="collapse"/>
+                                <connections>
+                                    <action selector="didPressCollapse:" destination="w1m-8z-Lo6" eventType="touchUpInside" id="EVW-Bc-pQE"/>
+                                </connections>
                             </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" id="n0g-HQ-FXv">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hi7-Yo-AWa">
+                                <rect key="frame" x="196" y="447" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mvb-mL-5Bx">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
+                                <state key="normal" image="picker_arc_s_default"/>
+                                <state key="selected" image="picker_arc_s_selected"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k5N-Qs-tUp">
+                                <rect key="frame" x="142" y="447" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="picker_arc_under_default"/>
+                                <state key="selected" image="picker_arc_under_selected"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ese-k8-V1k">
+                                <rect key="frame" x="86" y="447" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="picker_arc_over_default"/>
+                                <state key="selected" image="picker_arc_over_selected"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="arcPanelImageView" destination="lz7-fB-3Ih" id="kha-WK-kph"/>
+                        <outlet property="panelCollapseButton" destination="LaN-y8-QJC" id="AUq-pv-L4b"/>
+                        <outlet property="panelOverButton" destination="ese-k8-V1k" id="25X-QQ-yT6"/>
+                        <outlet property="panelSButton" destination="Hi7-Yo-AWa" id="4A3-Sk-bAY"/>
+                        <outlet property="panelUnderButton" destination="k5N-Qs-tUp" id="YVD-Qb-ztU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmO-zO-P7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="406"/>
+            <point key="canvasLocation" x="532" y="406"/>
         </scene>
     </scenes>
     <resources>
@@ -67,6 +131,14 @@
         <image name="arc_over" width="32" height="32"/>
         <image name="arc_panel" width="192" height="136"/>
         <image name="back" width="16" height="14"/>
+        <image name="collapse" width="14" height="9"/>
+        <image name="photo_averie" width="320" height="568"/>
+        <image name="picker_arc_over_default" width="36" height="36"/>
+        <image name="picker_arc_over_selected" width="36" height="36"/>
+        <image name="picker_arc_s_default" width="36" height="36"/>
+        <image name="picker_arc_s_selected" width="36" height="36"/>
+        <image name="picker_arc_under_default" width="36" height="36"/>
+        <image name="picker_arc_under_selected" width="36" height="36"/>
         <image name="share" width="22" height="35"/>
     </resources>
 </document>

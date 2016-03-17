@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C280C8C61C9A36A900526231 /* panelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C8C51C9A36A900526231 /* panelViewController.swift */; };
+		C280C8C81C9A3BC700526231 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C8C71C9A3BC700526231 /* FadeTransition.swift */; };
+		C280C8CA1C9A3BF700526231 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C8C91C9A3BF700526231 /* BaseTransition.swift */; };
 		C28B1AD51C978C03009882C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AD41C978C03009882C3 /* AppDelegate.swift */; };
 		C28B1AD71C978C03009882C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AD61C978C03009882C3 /* ViewController.swift */; };
 		C28B1ADA1C978C03009882C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B1AD81C978C03009882C3 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C280C8C51C9A36A900526231 /* panelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = panelViewController.swift; sourceTree = "<group>"; };
+		C280C8C71C9A3BC700526231 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		C280C8C91C9A3BF700526231 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		C28B1AD11C978C03009882C3 /* Arc Project View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arc Project View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B1AD41C978C03009882C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28B1AD61C978C03009882C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				C28B1AD41C978C03009882C3 /* AppDelegate.swift */,
+				C280C8C91C9A3BF700526231 /* BaseTransition.swift */,
+				C280C8C71C9A3BC700526231 /* FadeTransition.swift */,
 				C28B1AD61C978C03009882C3 /* ViewController.swift */,
 				C28B1AD81C978C03009882C3 /* Main.storyboard */,
+				C280C8C51C9A36A900526231 /* panelViewController.swift */,
 				C28B1ADB1C978C03009882C3 /* Assets.xcassets */,
 				C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */,
 				C28B1AE01C978C03009882C3 /* Info.plist */,
@@ -257,6 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28B1AD71C978C03009882C3 /* ViewController.swift in Sources */,
+				C280C8CA1C9A3BF700526231 /* BaseTransition.swift in Sources */,
+				C280C8C61C9A36A900526231 /* panelViewController.swift in Sources */,
+				C280C8C81C9A3BC700526231 /* FadeTransition.swift in Sources */,
 				C28B1AD51C978C03009882C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +494,7 @@
 				C28B1AFB1C978C03009882C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28B1AFC1C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				C28B1AFE1C978C03009882C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28B1AFF1C978C03009882C3 /* Build configuration list for PBXNativeTarget "Arc Project ViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				C28B1B011C978C03009882C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
