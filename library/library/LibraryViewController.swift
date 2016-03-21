@@ -17,7 +17,7 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
         
         ],[
             "title" : "row 2",
-            "background" : "test_image.png"
+            "background" : "test_image2.png"
         ]
     ]
     @IBOutlet weak var tableView: UITableView!
@@ -26,7 +26,7 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
 
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 320
+//        tableView.rowHeight = 200
         // Do any additional setup after loading the view.
     }
 
@@ -36,15 +36,17 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return projects.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("ProjectCell") as! ProjectTableViewCell
-//        cell.textLabel!.text = "This is \(indexPath.row)"
-        var test = projects[indexPath.row]["background"]
-        print(test)
-        cell.imageView!.image = UIImage(named: "\(projects[indexPath.row]["background"])")
+        cell.projectTitle.text = "This is \(indexPath.row)"
+        var test = projects[indexPath.row]["background"] as? String
+        print(test!)
+        if test != nil {
+           cell.projectImageView.image = UIImage(named: test!)
+        }
 //        cell.backgroundColor = UIColor(red: 230/255, green: 240/255, blue: 255/255, alpha: 1)
         
         // Configure YourCustomCell using the outlets that you've defined.
