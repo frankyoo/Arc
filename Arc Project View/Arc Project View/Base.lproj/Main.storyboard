@@ -47,12 +47,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eI8-ek-4YH">
-                                <rect key="frame" x="142" y="508" width="36" height="36"/>
+                                <rect key="frame" x="142" y="506" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arc_over"/>
                                 <connections>
                                     <action selector="didPressPanelOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuH-Wc-oF7"/>
-                                    <segue destination="w1m-8z-Lo6" kind="modal" identifier="panelSegue" id="GOT-UB-Xut"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +60,7 @@
                     <connections>
                         <outlet property="openPanelButton" destination="eI8-ek-4YH" id="gin-w1-KQP"/>
                         <outlet property="projectNameField" destination="Cw2-2u-f5y" id="cQg-DY-WOQ"/>
+                        <segue destination="w1m-8z-Lo6" kind="modal" identifier="panelSegue" id="exL-yh-dM9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

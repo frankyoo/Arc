@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         destinationViewController.transitioningDelegate = fadeTransition
         
         // Adjust the transition duration. (seconds)
-        fadeTransition.duration = 0.6
+        fadeTransition.duration = 0.3
     }
 
     @IBAction func didTapBackground(sender: AnyObject) {
