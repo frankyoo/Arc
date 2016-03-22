@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LibraryViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
@@ -23,6 +24,19 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var gameScore = PFObject(className:"GameScore")
+        gameScore["score"] = 1334
+        gameScore["playerName"] = "Marc Haumann"
+        gameScore["cheatMode"] = false
+        gameScore.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                 print("The object has been saved")
+            } else {
+                 print("There was a problem, check error.description")
+            }
+        }
 
         tableView.delegate = self
         tableView.dataSource = self
