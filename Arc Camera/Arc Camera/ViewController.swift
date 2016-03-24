@@ -21,20 +21,13 @@ class ViewController: UIViewController, PBJVisionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        blurEffectView.frame = CGRect(x: (view.frame.width / 2 ) - 50, y: 550, width: 100, height: 100)
-//        shadowView.frame = blurEffectView.frame
+
         blurEffectView.layer.cornerRadius = 50
         blurEffectView.clipsToBounds = true
         blurEffectView.layer.borderColor = UIColor.grayColor().CGColor
         blurEffectView.layer.borderWidth = 0.5
-        
-        blurEffectView.layer.shadowColor = UIColor.orangeColor().CGColor
-        blurEffectView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
-        blurEffectView.layer.shadowOpacity = 1
-        blurEffectView.layer.shadowRadius = 1
-//        blurEffectView.layer.shadowPath = blurEffectView.path
-//        layer.insertSublayer(blurEffectView, atIndex: 0)
+        blurEffectView.layer.shadowOpacity = 0.5
+
         
         view.bringSubviewToFront(blurEffectView)
         
@@ -105,6 +98,15 @@ class ViewController: UIViewController, PBJVisionDelegate {
         }
     }
     
-    
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))
+        resizeImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        resizeImageView.image = image
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
 }
 

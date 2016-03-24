@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" id="9bt-CI-Ohi">
-                                <rect key="frame" x="119" y="448" width="100" height="100"/>
+                                <rect key="frame" x="110" y="448" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="6iS-vQ-29F">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -68,7 +68,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flip" width="64" height="61"/>
-        <image name="next" width="57" height="59"/>
+        <image name="flip" width="54" height="50"/>
+        <image name="next" width="47" height="49"/>
     </resources>
 </document>
