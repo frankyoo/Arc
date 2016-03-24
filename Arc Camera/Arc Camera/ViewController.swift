@@ -24,9 +24,6 @@ class ViewController: UIViewController, PBJVisionDelegate {
 
         blurEffectView.layer.cornerRadius = 50
         blurEffectView.clipsToBounds = true
-        blurEffectView.layer.borderColor = UIColor.grayColor().CGColor
-        blurEffectView.layer.borderWidth = 0.5
-        blurEffectView.layer.shadowOpacity = 0.5
 
         
         view.bringSubviewToFront(blurEffectView)
@@ -107,6 +104,10 @@ class ViewController: UIViewController, PBJVisionDelegate {
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return newImage
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }
 

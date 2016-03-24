@@ -22,14 +22,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tN0-Uc-9x3">
-                                <rect key="frame" x="20" y="482" width="64" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="flip"/>
-                                <connections>
-                                    <action selector="onFlipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zr9-b2-9PQ"/>
-                                </connections>
-                            </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" id="9bt-CI-Ohi">
                                 <rect key="frame" x="110" y="448" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -44,10 +36,22 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oLv-5V-mAV">
-                                <rect key="frame" x="243" y="484" width="57" height="59"/>
+                                <rect key="frame" x="243" y="489" width="57" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="next"/>
                             </button>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tN0-Uc-9x3">
+                                <rect key="frame" x="20" y="487" width="64" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="flip"/>
+                                <connections>
+                                    <action selector="onFlipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zr9-b2-9PQ"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="shadow" id="Hog-R7-tsM">
+                                <rect key="frame" x="86" y="424" width="148" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -70,5 +74,6 @@
     <resources>
         <image name="flip" width="54" height="50"/>
         <image name="next" width="47" height="49"/>
+        <image name="shadow" width="148" height="148"/>
     </resources>
 </document>
