@@ -12,7 +12,7 @@
 		C280C8CA1C9A3BF700526231 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C280C8C91C9A3BF700526231 /* BaseTransition.swift */; };
 		C28B1AD51C978C03009882C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AD41C978C03009882C3 /* AppDelegate.swift */; };
 		C28B1AD71C978C03009882C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AD61C978C03009882C3 /* ViewController.swift */; };
-		C28B1ADA1C978C03009882C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B1AD81C978C03009882C3 /* Main.storyboard */; };
+		C28B1ADA1C978C03009882C3 /* ProjectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B1AD81C978C03009882C3 /* ProjectView.storyboard */; };
 		C28B1ADC1C978C03009882C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B1ADB1C978C03009882C3 /* Assets.xcassets */; };
 		C28B1ADF1C978C03009882C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */; };
 		C28B1AEA1C978C03009882C3 /* Arc_Project_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B1AE91C978C03009882C3 /* Arc_Project_ViewTests.swift */; };
@@ -43,7 +43,7 @@
 		C28B1AD11C978C03009882C3 /* Arc Project View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arc Project View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B1AD41C978C03009882C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28B1AD61C978C03009882C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C28B1AD91C978C03009882C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C28B1AD91C978C03009882C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProjectView.storyboard; sourceTree = "<group>"; };
 		C28B1ADB1C978C03009882C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28B1ADE1C978C03009882C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C28B1AE01C978C03009882C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				C280C8C91C9A3BF700526231 /* BaseTransition.swift */,
 				C280C8C71C9A3BC700526231 /* FadeTransition.swift */,
 				C28B1AD61C978C03009882C3 /* ViewController.swift */,
-				C28B1AD81C978C03009882C3 /* Main.storyboard */,
+				C28B1AD81C978C03009882C3 /* ProjectView.storyboard */,
 				C280C8C51C9A36A900526231 /* panelViewController.swift */,
 				C28B1ADB1C978C03009882C3 /* Assets.xcassets */,
 				C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */,
@@ -240,7 +240,7 @@
 			files = (
 				C28B1ADF1C978C03009882C3 /* LaunchScreen.storyboard in Resources */,
 				C28B1ADC1C978C03009882C3 /* Assets.xcassets in Resources */,
-				C28B1ADA1C978C03009882C3 /* Main.storyboard in Resources */,
+				C28B1ADA1C978C03009882C3 /* ProjectView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +305,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C28B1AD81C978C03009882C3 /* Main.storyboard */ = {
+		C28B1AD81C978C03009882C3 /* ProjectView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C28B1AD91C978C03009882C3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ProjectView.storyboard;
 			sourceTree = "<group>";
 		};
 		C28B1ADD1C978C03009882C3 /* LaunchScreen.storyboard */ = {

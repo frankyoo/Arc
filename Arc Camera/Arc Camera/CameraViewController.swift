@@ -8,8 +8,9 @@
 
 import UIKit
 import PBJVision
+import Parse
 
-class ViewController: UIViewController, PBJVisionDelegate {
+class CameraViewController: UIViewController, PBJVisionDelegate {
     
     @IBOutlet weak var thumbnailView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
@@ -18,10 +19,18 @@ class ViewController: UIViewController, PBJVisionDelegate {
     let vision = PBJVision.sharedInstance()
     
     var photoImages: [UIImage] = []
-    
+    var arrayImage = PFObject(className:"UIImage")
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< Updated upstream:Arc Camera/Arc Camera/ViewController.swift
 
+=======
+        
+        
+        
+//        blurEffectView.frame = CGRect(x: (view.frame.width / 2 ) - 50, y: 550, width: 100, height: 100)
+//        shadowView.frame = blurEffectView.frame
+>>>>>>> Stashed changes:Arc Camera/Arc Camera/CameraViewController.swift
         blurEffectView.layer.cornerRadius = 50
         blurEffectView.clipsToBounds = true
 
@@ -78,13 +87,54 @@ class ViewController: UIViewController, PBJVisionDelegate {
         vision.capturePhoto()
     }
     
+    func resize(image: UIImage, newSize: CGSize) -> UIImage {
+        let resizeImageView = UIImageView(frame: CGRectMake(0, 0, newSize.width, newSize.height))
+        resizeImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        resizeImageView.image = image
+        UIGraphicsBeginImageContext(resizeImageView.frame.size)
+        resizeImageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+    
     func vision(vision: PBJVision, capturedPhoto photoDict: [NSObject : AnyObject]?, error: NSError?) {
         let image = photoDict![PBJVisionPhotoImageKey] as! UIImage
         
         thumbnailView.image = image
         vision.startPreview()
-        photoImages.append(image)
-        print(photoImages.count)
+        let scaledImage = resize(image, newSize: CGSize(width: 640, height: 1136))
+        let imageData = UIImageJPEGRepresentation(scaledImage, 0.7)
+        photoImages.append(scaledImage)
+        print(scaledImage)
+        let imageFile = PFFile(name: "image.jpg", data: imageData!)
+        imageFile?.saveInBackgroundWithBlock({ (success: Bool, error: NSError?) in
+            if (success) {
+                let newObject = PFObject(className:"PhotoObject")
+                newObject.setObject(imageFile!, forKey: "image")
+                newObject.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError?) -> Void in
+                    if (success) {
+                        print("The object has been saved")
+                    } else {
+                        print("There was a problem, check error.description")
+                    }
+                }
+                print("The object has been saved")
+            } else {
+                print("There was a problem, check error.description")
+            }
+        })
+//        arrayImage.setObject(imageFile!, forKey: "image")
+//        arrayImage["image"] = imageFile
+//        arrayImage.saveInBackgroundWithBlock {
+//            (success: Bool, error: NSError?) -> Void in
+//            if (success) {
+//                print("The object has been saved")
+//            } else {
+//                print("There was a problem, check error.description")
+//            }
+//        }
     }
     
     @IBAction func onFlipButton(sender: AnyObject) {

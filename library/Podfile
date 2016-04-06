@@ -4,4 +4,6 @@ use_frameworks!
 
 pod 'Parse'
 
+pod 'PBJVision'
+
 

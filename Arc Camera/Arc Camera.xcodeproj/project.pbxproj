@@ -11,7 +11,7 @@
 		D761E4DE1C9A28AB00083628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D761E4DD1C9A28AB00083628 /* Assets.xcassets */; };
 		D7A5EC7F1C8E66A30090F87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC7E1C8E66A30090F87F /* AppDelegate.swift */; };
 		D7A5EC811C8E66A30090F87F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC801C8E66A30090F87F /* ViewController.swift */; };
-		D7A5EC841C8E66A30090F87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A5EC821C8E66A30090F87F /* Main.storyboard */; };
+		D7A5EC841C8E66A30090F87F /* CameraView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A5EC821C8E66A30090F87F /* CameraView.storyboard */; };
 		D7A5EC891C8E66A30090F87F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A5EC871C8E66A30090F87F /* LaunchScreen.storyboard */; };
 		D7A5EC941C8E66A30090F87F /* Arc_CameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC931C8E66A30090F87F /* Arc_CameraTests.swift */; };
 		D7A5EC9F1C8E66A30090F87F /* Arc_CameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A5EC9E1C8E66A30090F87F /* Arc_CameraUITests.swift */; };
@@ -42,7 +42,7 @@
 		D7A5EC7B1C8E66A30090F87F /* Arc Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arc Camera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A5EC7E1C8E66A30090F87F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7A5EC801C8E66A30090F87F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7A5EC831C8E66A30090F87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7A5EC831C8E66A30090F87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CameraView.storyboard; sourceTree = "<group>"; };
 		D7A5EC881C8E66A30090F87F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A5EC8A1C8E66A30090F87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A5EC8F1C8E66A30090F87F /* Arc CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arc CameraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +123,7 @@
 			children = (
 				D7A5EC7E1C8E66A30090F87F /* AppDelegate.swift */,
 				D7A5EC801C8E66A30090F87F /* ViewController.swift */,
-				D7A5EC821C8E66A30090F87F /* Main.storyboard */,
+				D7A5EC821C8E66A30090F87F /* CameraView.storyboard */,
 				D761E4DD1C9A28AB00083628 /* Assets.xcassets */,
 				D7A5EC871C8E66A30090F87F /* LaunchScreen.storyboard */,
 				D7A5EC8A1C8E66A30090F87F /* Info.plist */,
@@ -261,7 +261,7 @@
 			files = (
 				D7A5EC891C8E66A30090F87F /* LaunchScreen.storyboard in Resources */,
 				D761E4DE1C9A28AB00083628 /* Assets.xcassets in Resources */,
-				D7A5EC841C8E66A30090F87F /* Main.storyboard in Resources */,
+				D7A5EC841C8E66A30090F87F /* CameraView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,12 +371,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7A5EC821C8E66A30090F87F /* Main.storyboard */ = {
+		D7A5EC821C8E66A30090F87F /* CameraView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D7A5EC831C8E66A30090F87F /* Base */,
 			);
-			name = Main.storyboard;
+			name = CameraView.storyboard;
 			sourceTree = "<group>";
 		};
 		D7A5EC871C8E66A30090F87F /* LaunchScreen.storyboard */ = {

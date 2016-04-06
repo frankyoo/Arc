@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProjectViewController.swift
 //  Arc Project View
 //
 //  Created by Frank Yoo on 3/14/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProjectViewController: UIViewController {
 
     @IBOutlet weak var projectNameField: UITextField!
     @IBOutlet weak var openPanelButton: UIButton!

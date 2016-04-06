@@ -2,12 +2,15 @@ PODS:
   - Bolts/Tasks (1.6.0)
   - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
+  - PBJVision (0.4.2)
 
 DEPENDENCIES:
   - Parse
+  - PBJVision
 
 SPEC CHECKSUMS:
   Bolts: f52a250053bb517ca874523c3913776359ab3def
   Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
+  PBJVision: fe43c9a58bb1c1277d16fd802fa836d25e034a45
 
 COCOAPODS: 0.39.0

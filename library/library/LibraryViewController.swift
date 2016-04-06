@@ -11,7 +11,7 @@ import Parse
 
 class LibraryViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
-    var projects: NSArray! = [
+    var projects = [
         [
             "title" : "row 1",
             "background" : "test_image.png"
@@ -24,19 +24,6 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var gameScore = PFObject(className:"GameScore")
-        gameScore["score"] = 1334
-        gameScore["playerName"] = "Marc Haumann"
-        gameScore["cheatMode"] = false
-        gameScore.saveInBackgroundWithBlock {
-            (success: Bool, error: NSError?) -> Void in
-            if (success) {
-                 print("The object has been saved")
-            } else {
-                 print("There was a problem, check error.description")
-            }
-        }
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -56,7 +43,7 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("ProjectCell") as! ProjectTableViewCell
         cell.projectTitle.text = "This is \(indexPath.row)"
-        var test = projects[indexPath.row]["background"] as? String
+        var test = projects[indexPath.row]["background"] as! String?
         print(test!)
         if test != nil {
            cell.projectImageView.image = UIImage(named: test!)
