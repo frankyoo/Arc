@@ -10,24 +10,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LibraryViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="201" sectionHeaderHeight="28" sectionFooterHeight="28" id="ruE-Fx-ahw">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="282" sectionHeaderHeight="28" sectionFooterHeight="28" id="ruE-Fx-ahw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="250" id="7FK-eL-esF" customClass="ProjectTableViewCell" customModule="library" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="282" id="7FK-eL-esF" customClass="ProjectTableViewCell" customModule="library" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="282"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="7FK-eL-esF" id="0J7-CT-dOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="282"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bZd-dv-hVa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bZd-dv-hVa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ykm-s3-MyE">
                                                     <rect key="frame" x="8" y="151" width="131" height="30"/>
@@ -50,19 +50,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Arc" id="V3P-LK-ZvK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="ruE-Fx-ahw" id="Lwy-C0-Ct3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="662" y="319"/>
+            <point key="canvasLocation" x="661.5" y="318.5"/>
         </scene>
         <!--Arc-->
         <scene sceneID="5bF-zZ-AiS">
             <objects>
                 <navigationController title="Arc" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gu7-QG-RtO" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X73-1s-Z5Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -81,11 +83,11 @@
             <objects>
                 <viewController id="eUa-mf-Erg" customClass="ProjectViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90t-tB-0Q9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo_averie" id="t0h-qZ-FM1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -93,25 +95,18 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1SA-pi-3Bm">
-                                <rect key="frame" x="240" y="498" width="50" height="50"/>
+                                <rect key="frame" x="285" y="590" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="share"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qsd-hA-Juf">
-                                <rect key="frame" x="30" y="498" width="50" height="50"/>
+                                <rect key="frame" x="46" y="590" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add"/>
                                 <connections>
                                     <action selector="addPhotoDidTap:" destination="eUa-mf-Erg" eventType="touchUpInside" id="aaD-8I-93U"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project name" textAlignment="center" minimumFontSize="17" id="ncf-vd-rMj">
-                                <rect key="frame" x="68" y="25" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2hN-et-BbT">
                                 <rect key="frame" x="0.0" y="20" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -121,17 +116,30 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Psz-43-hvC">
-                                <rect key="frame" x="142" y="506" width="36" height="36"/>
+                                <rect key="frame" x="169" y="595" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arc_over"/>
                                 <connections>
                                     <action selector="didPressPanelOpen:" destination="eUa-mf-Erg" eventType="touchUpInside" id="BoF-qb-Mak"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project name" textAlignment="center" minimumFontSize="17" id="ncf-vd-rMj">
+                                <rect key="frame" x="74" y="24" width="226" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.60174725506756765" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UJv-pf-zHG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="fullImageView" destination="t0h-qZ-FM1" id="fcb-BY-gps"/>
                         <outlet property="openPanelButton" destination="Psz-43-hvC" id="KtW-lV-PcM"/>
@@ -147,22 +155,22 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1104" y="319"/>
+            <point key="canvasLocation" x="1103.5" y="318.5"/>
         </scene>
         <!--Panel View Controller-->
         <scene sceneID="YfL-sk-N7O">
             <objects>
                 <viewController modalPresentationStyle="currentContext" id="0fm-5w-weo" customClass="panelViewController" customModule="library" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VH2-4V-rb7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arc_panel" id="f8R-lJ-ciZ">
-                                <rect key="frame" x="64" y="422" width="192" height="136"/>
+                                <rect key="frame" x="91" y="511" width="192" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rxj-ru-ckI">
-                                <rect key="frame" x="142" y="505" width="36" height="36"/>
+                                <rect key="frame" x="169" y="594" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="collapse"/>
                                 <connections>
@@ -170,19 +178,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EQl-zs-8dN">
-                                <rect key="frame" x="196" y="447" width="36" height="36"/>
+                                <rect key="frame" x="223" y="536" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="picker_arc_s_default"/>
                                 <state key="selected" image="picker_arc_s_selected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AB3-qG-Eik">
-                                <rect key="frame" x="142" y="447" width="36" height="36"/>
+                                <rect key="frame" x="169" y="536" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="picker_arc_under_default"/>
                                 <state key="selected" image="picker_arc_under_selected"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MMJ-tw-dal">
-                                <rect key="frame" x="86" y="447" width="36" height="36"/>
+                                <rect key="frame" x="113" y="536" width="36" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="picker_arc_over_default"/>
                                 <state key="selected" image="picker_arc_over_selected"/>
@@ -190,6 +198,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="arcPanelImageView" destination="f8R-lJ-ciZ" id="GJN-wM-Jnf"/>
                         <outlet property="panelCollapseButton" destination="Rxj-ru-ckI" id="y7A-ZC-Er6"/>
@@ -207,16 +216,16 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="OQp-dN-yrf" customClass="CameraViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nuU-mX-b63">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="PbM-fe-RRq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.74300307050000003" green="0.90234106650000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1cr-gf-Rkt" userLabel="Opacity View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q6L-au-u0T">
@@ -229,7 +238,7 @@
                                 </connections>
                             </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" id="Fyv-Mp-Qkg">
-                                <rect key="frame" x="110" y="448" width="100" height="100"/>
+                                <rect key="frame" x="138" y="547" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="V0F-ZF-Oex">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -242,7 +251,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FnR-4M-7hD">
-                                <rect key="frame" x="236" y="468" width="57" height="59"/>
+                                <rect key="frame" x="291" y="567" width="57" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="next"/>
                                 <connections>
@@ -250,7 +259,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeM-sl-i0b">
-                                <rect key="frame" x="21" y="468" width="64" height="61"/>
+                                <rect key="frame" x="21" y="567" width="64" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="flip"/>
                                 <connections>
@@ -260,6 +269,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="blurEffectView" destination="Fyv-Mp-Qkg" id="mj7-oD-7sX"/>
                         <outlet property="cameraView" destination="PbM-fe-RRq" id="Ipv-vb-1s5"/>
@@ -295,6 +305,6 @@
         <image name="share" width="22" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W97-Rd-9p3"/>
+        <segue reference="wk8-fe-Fuj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,10 +26,10 @@ class panelViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         
-        self.panelOverButton.frame.origin.y = 467
-        self.panelUnderButton.frame.origin.y = 467
-        self.panelSButton.frame.origin.y = 467
-        self.panelCollapseButton.frame.origin.y = 505
+        self.panelOverButton.frame.origin.y = 556
+        self.panelUnderButton.frame.origin.y = 556
+        self.panelSButton.frame.origin.y = 556
+        self.panelCollapseButton.frame.origin.y = 594
         
         self.panelOverButton.alpha = 0
         self.panelUnderButton.alpha = 0
@@ -64,25 +64,25 @@ class panelViewController: UIViewController {
         let transformButtons = CGAffineTransformMakeScale(1, 1)
         
         UIView.animateWithDuration(0.3, delay: 0.1, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelOverButton.frame.origin.y = 447
+            self.panelOverButton.frame.origin.y = 536
             self.panelOverButton.alpha = 1
             self.panelOverButton.transform = transformButtons
             }, completion: nil)
         
         UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelUnderButton.frame.origin.y = 447
+            self.panelUnderButton.frame.origin.y = 536
             self.panelUnderButton.alpha = 1
             self.panelUnderButton.transform = transformButtons
             }, completion: nil)
         
         UIView.animateWithDuration(0.3, delay: 0.3, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelSButton.frame.origin.y = 447
+            self.panelSButton.frame.origin.y = 536
             self.panelSButton.alpha = 1
             self.panelSButton.transform = transformButtons
             }, completion: nil)
         
         UIView.animateWithDuration(0.3, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelCollapseButton.frame.origin.y = 505
+            self.panelCollapseButton.frame.origin.y = 594
             self.panelCollapseButton.alpha = 1
             }, completion: nil)
         
@@ -100,25 +100,25 @@ class panelViewController: UIViewController {
         }
         
         UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelOverButton.frame.origin.y = 457
+            self.panelOverButton.frame.origin.y = 546
             self.panelOverButton.alpha = 0
             self.panelOverButton.transform = transform
             }, completion: nil)
         
         UIView.animateWithDuration(0.6, delay: 0.1, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelUnderButton.frame.origin.y = 457
+            self.panelUnderButton.frame.origin.y = 546
             self.panelUnderButton.alpha = 0
             self.panelUnderButton.transform = transform
             }, completion: nil)
         
         UIView.animateWithDuration(0.6, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.panelSButton.frame.origin.y = 457
+            self.panelSButton.frame.origin.y = 546
             self.panelSButton.alpha = 0
             self.panelSButton.transform = transform
             }, completion: nil)
         
         UIView.animateWithDuration(0.6, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: [], animations: { () -> Void in
-            self.arcPanelImageView.frame.origin.y = 457
+            self.arcPanelImageView.frame.origin.y = 546
             self.arcPanelImageView.alpha = 0
             self.arcPanelImageView.transform = transformPanel
             }, completion: nil)
