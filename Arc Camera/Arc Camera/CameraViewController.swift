@@ -15,6 +15,7 @@ class CameraViewController: UIViewController, PBJVisionDelegate {
     @IBOutlet weak var thumbnailView: UIImageView!
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var blurEffectView: UIVisualEffectView!
+    var closeCameraTransition: CloseCameraTransition!
     
     let vision = PBJVision.sharedInstance()
     
@@ -101,36 +102,48 @@ class CameraViewController: UIViewController, PBJVisionDelegate {
         let imageData = UIImageJPEGRepresentation(scaledImage, 0.7)
         photoImages.append(scaledImage)
         print(scaledImage)
-        let imageFile = PFFile(name: "image.jpg", data: imageData!)
-        imageFile?.saveInBackgroundWithBlock({ (success: Bool, error: NSError?) in
-            if (success) {
-                let newObject = PFObject(className:"PhotoObject")
-                newObject.setObject(imageFile!, forKey: "image")
-                newObject.saveInBackgroundWithBlock {
-                    (success: Bool, error: NSError?) -> Void in
-                    if (success) {
-                        print("The object has been saved")
-                    } else {
-                        print("There was a problem, check error.description")
-                    }
-                }
-                print("The object has been saved")
-            } else {
-                print("There was a problem, check error.description")
-            }
-        })
-//        arrayImage.setObject(imageFile!, forKey: "image")
-//        arrayImage["image"] = imageFile
-//        arrayImage.saveInBackgroundWithBlock {
-//            (success: Bool, error: NSError?) -> Void in
+//        let imageFile = PFFile(name: "image.jpg", data: imageData!)
+//        imageFile?.saveInBackgroundWithBlock({ (success: Bool, error: NSError?) in
 //            if (success) {
+//                let newObject = PFObject(className:"PhotoObject")
+//                newObject.setObject(imageFile!, forKey: "image")
+//                newObject.saveInBackgroundWithBlock {
+//                    (success: Bool, error: NSError?) -> Void in
+//                    if (success) {
+//                        print("The object has been saved")
+//                    } else {
+//                        print("There was a problem, check error.description")
+//                    }
+//                }
 //                print("The object has been saved")
 //            } else {
 //                print("There was a problem, check error.description")
 //            }
-//        }
+//        })
+
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+        let destinationViewController = segue.destinationViewController
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // Create a new instance of your fadeTransition.
+        closeCameraTransition = CloseCameraTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = closeCameraTransition
+        
+        // Adjust the transition duration. (seconds)
+        closeCameraTransition.duration = 0.3
+    }
+    
+    @IBAction func saveImages(sender: UIButton) {
+        performSegueWithIdentifier("cameraCloseSegue", sender: self)
+    }
     @IBAction func backTap(sender: UIButton) {
         dismissViewControllerAnimated(false, completion: nil)
     }

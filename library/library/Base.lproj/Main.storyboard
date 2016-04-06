@@ -102,7 +102,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add"/>
                                 <connections>
-                                    <segue destination="OQp-dN-yrf" kind="modal" id="XQY-Vu-Pes"/>
+                                    <action selector="addPhotoDidTap:" destination="eUa-mf-Erg" eventType="touchUpInside" id="aaD-8I-93U"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project name" textAlignment="center" minimumFontSize="17" id="ncf-vd-rMj">
@@ -137,6 +137,7 @@
                         <outlet property="openPanelButton" destination="Psz-43-hvC" id="KtW-lV-PcM"/>
                         <outlet property="projectNameField" destination="ncf-vd-rMj" id="RFJ-Pg-819"/>
                         <segue destination="0fm-5w-weo" kind="modal" identifier="panelSegue" id="WJN-26-Zep"/>
+                        <segue destination="OQp-dN-yrf" kind="modal" identifier="cameraSegue" id="WYI-dk-T2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4E-U0-GqS" sceneMemberID="firstResponder"/>
@@ -227,16 +228,8 @@
                                     <action selector="didPressBack:" destination="eUa-mf-Erg" eventType="touchUpInside" id="BPl-j3-Ftg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeM-sl-i0b">
-                                <rect key="frame" x="20" y="482" width="64" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="flip"/>
-                                <connections>
-                                    <action selector="onFlipButton:" destination="OQp-dN-yrf" eventType="touchUpInside" id="q2m-xS-U07"/>
-                                </connections>
-                            </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" id="Fyv-Mp-Qkg">
-                                <rect key="frame" x="119" y="448" width="100" height="100"/>
+                                <rect key="frame" x="110" y="448" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="V0F-ZF-Oex">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -249,9 +242,20 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FnR-4M-7hD">
-                                <rect key="frame" x="243" y="484" width="57" height="59"/>
+                                <rect key="frame" x="236" y="468" width="57" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="next"/>
+                                <connections>
+                                    <action selector="saveImages:" destination="OQp-dN-yrf" eventType="touchUpInside" id="s6g-Yy-4Gn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeM-sl-i0b">
+                                <rect key="frame" x="21" y="468" width="64" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="flip"/>
+                                <connections>
+                                    <action selector="onFlipButton:" destination="OQp-dN-yrf" eventType="touchUpInside" id="q2m-xS-U07"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -260,6 +264,7 @@
                         <outlet property="blurEffectView" destination="Fyv-Mp-Qkg" id="mj7-oD-7sX"/>
                         <outlet property="cameraView" destination="PbM-fe-RRq" id="Ipv-vb-1s5"/>
                         <outlet property="thumbnailView" destination="1cr-gf-Rkt" id="zDs-wL-FR4"/>
+                        <segue destination="eUa-mf-Erg" kind="modal" identifier="cameraCloseSegue" id="W97-Rd-9p3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AN6-NH-mzI" sceneMemberID="firstResponder"/>
@@ -289,4 +294,7 @@
         <image name="picker_arc_under_selected" width="36" height="36"/>
         <image name="share" width="22" height="35"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="W97-Rd-9p3"/>
+    </inferredMetricsTieBreakers>
 </document>

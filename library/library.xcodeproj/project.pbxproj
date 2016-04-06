@@ -15,6 +15,7 @@
 		C9095F841CA3889100DD1371 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9095F801CA3889100DD1371 /* BaseTransition.swift */; };
 		C9095F871CA3901A00DD1371 /* ProjectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9095F851CA3901A00DD1371 /* ProjectView.storyboard */; };
 		C9095F8A1CA3903C00DD1371 /* CameraView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9095F881CA3903C00DD1371 /* CameraView.storyboard */; };
+		C94ABE471CB51090000ED0EC /* CloseCameraTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94ABE461CB51090000ED0EC /* CloseCameraTransition.swift */; };
 		C9C90D8B1C8E615600EC5945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C90D8A1C8E615600EC5945 /* AppDelegate.swift */; };
 		C9C90D8D1C8E615600EC5945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C90D8C1C8E615600EC5945 /* ViewController.swift */; };
 		C9C90D901C8E615600EC5945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C90D8E1C8E615600EC5945 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		C9095F801CA3889100DD1371 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTransition.swift; path = "../../Arc Project View/Arc Project View/BaseTransition.swift"; sourceTree = "<group>"; };
 		C9095F861CA3901A00DD1371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Arc Project View/Arc Project View/Base.lproj/ProjectView.storyboard"; sourceTree = "<group>"; };
 		C9095F891CA3903C00DD1371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../Arc Camera/Arc Camera/Base.lproj/CameraView.storyboard"; sourceTree = "<group>"; };
+		C94ABE461CB51090000ED0EC /* CloseCameraTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseCameraTransition.swift; sourceTree = "<group>"; };
 		C9C90D871C8E615600EC5945 /* library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C90D8A1C8E615600EC5945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9C90D8C1C8E615600EC5945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,8 +148,9 @@
 				C9095F851CA3901A00DD1371 /* ProjectView.storyboard */,
 				C9095F881CA3903C00DD1371 /* CameraView.storyboard */,
 				C9095F601CA3830C00DD1371 /* CameraViewController.swift */,
-				C9095F7D1CA3889100DD1371 /* ProjectViewController.swift */,
 				C9095F7E1CA3889100DD1371 /* FadeTransition.swift */,
+				C94ABE461CB51090000ED0EC /* CloseCameraTransition.swift */,
+				C9095F7D1CA3889100DD1371 /* ProjectViewController.swift */,
 				C9095F7F1CA3889100DD1371 /* panelViewController.swift */,
 				C9095F801CA3889100DD1371 /* BaseTransition.swift */,
 				C9C90DB81C8E622100EC5945 /* LibraryViewController.swift */,
@@ -364,6 +367,7 @@
 				C9C90D8D1C8E615600EC5945 /* ViewController.swift in Sources */,
 				C9095F821CA3889100DD1371 /* FadeTransition.swift in Sources */,
 				C9095F611CA3830C00DD1371 /* CameraViewController.swift in Sources */,
+				C94ABE471CB51090000ED0EC /* CloseCameraTransition.swift in Sources */,
 				C9095F831CA3889100DD1371 /* panelViewController.swift in Sources */,
 				C9095F841CA3889100DD1371 /* BaseTransition.swift in Sources */,
 				C9095F811CA3889100DD1371 /* ProjectViewController.swift in Sources */,

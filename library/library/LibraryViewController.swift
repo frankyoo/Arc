@@ -87,7 +87,7 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
         // Pass on the data to the Detail ViewController by setting it's indexPathRow value
         let newImage = projects[index!]["background"] as! NSArray?
         if newImage != nil {
-            detailViewController.imageHolder = newImage! as! [UIImage]
+            imageHolder = newImage! as! [UIImage]
         }
     }
 

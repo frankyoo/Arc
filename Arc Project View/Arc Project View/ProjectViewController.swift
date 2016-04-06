@@ -8,10 +8,10 @@
 
 import UIKit
 
-//var imageHolder: UIImage!
+var imageHolder: [UIImage] = []
 
 class ProjectViewController: UIViewController {
-    var imageHolder: [UIImage] = []
+//    var imageHolder: [UIImage] = []
     @IBOutlet weak var fullImageView: UIImageView!
     @IBOutlet weak var projectNameField: UITextField!
     @IBOutlet weak var openPanelButton: UIButton!
@@ -26,11 +26,15 @@ class ProjectViewController: UIViewController {
         
     }
     
+//    override func viewWillAppear(animated: Bool) {
+//        fullImageView.animationImages = imageHolder
+//        fullImageView.animationDuration = 2
+//        fullImageView.startAnimating()
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullImageView.animationImages = imageHolder
-        fullImageView.animationDuration = 2
-        fullImageView.startAnimating()
+        loadImageArray()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
@@ -54,6 +58,12 @@ class ProjectViewController: UIViewController {
         // Adjust the transition duration. (seconds)
         fadeTransition.duration = 0.3
     }
+    
+    func loadImageArray() {
+        fullImageView.animationImages = imageHolder
+        fullImageView.animationDuration = 2
+        fullImageView.startAnimating()
+    }
 
     @IBAction func didTapBackground(sender: AnyObject) {
         
@@ -61,6 +71,9 @@ class ProjectViewController: UIViewController {
         
     }
     
+    @IBAction func addPhotoDidTap(sender: UIButton) {
+        performSegueWithIdentifier("cameraSegue", sender: self)
+    }
     @IBAction func didPressBack(sender: AnyObject) {
         navigationController!.popViewControllerAnimated(true)
     }
