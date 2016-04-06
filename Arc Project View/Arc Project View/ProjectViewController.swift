@@ -9,6 +9,7 @@
 import UIKit
 
 var imageHolder: [UIImage] = []
+var animation : CAKeyframeAnimation!
 
 class ProjectViewController: UIViewController {
 //    var imageHolder: [UIImage] = []
@@ -60,14 +61,16 @@ class ProjectViewController: UIViewController {
     }
     
     func loadImageArray() {
-        fullImageView.animationImages = imageHolder
-        fullImageView.animationDuration = 2
-        let customAnimation = CABasicAnimation()
-        customAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-//        fullImageView.animationDidStart(
-//            customAnimation
-//        )
-        fullImageView.startAnimating()
+        animation = CAKeyframeAnimation(keyPath: "contents")
+        animation.calculationMode = kCAAnimationDiscrete
+//        animation.timingFunction = kCAMediaTimingFunctionEaseInEaseOut
+        animation.duration = 3
+        animation.values = imageHolder.map {$0.CGImage as! AnyObject}
+        animation.repeatCount = Float.infinity
+        animation.removedOnCompletion = false
+        animation.fillMode = kCAFillModeForwards
+        fullImageView.layer.addAnimation(animation, forKey: "contents")
+        
     }
 
     @IBAction func didTapBackground(sender: AnyObject) {
