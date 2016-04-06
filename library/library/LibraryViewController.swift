@@ -11,11 +11,30 @@ import Parse
 var projects = [
     [
         "title" : "row 1",
-        "background" : "test_image.png"
+        "background" : [
+            UIImage(named: "IMG_0109.jpg")!,
+            UIImage(named: "IMG_0110.jpg")!,
+            UIImage(named: "IMG_0111.jpg")!,
+            UIImage(named: "IMG_0112.jpg")!,
+            UIImage(named: "IMG_0113.jpg")!,
+            UIImage(named: "IMG_0114.jpg")!,
+            UIImage(named: "IMG_0115.jpg")!,
+            UIImage(named: "IMG_0116.jpg")!,
+            UIImage(named: "IMG_0117.jpg")!,
+            UIImage(named: "IMG_0118.jpg")!
+        ]
         
     ],[
         "title" : "row 2",
-        "background" : "test_image2.png"
+        "background" : [
+            UIImage(named: "IMG_0109.jpg")!,
+            UIImage(named: "IMG_0110.jpg")!,
+            UIImage(named: "IMG_0111.jpg")!,
+            UIImage(named: "IMG_0112.jpg")!,
+            UIImage(named: "IMG_0113.jpg")!,
+            UIImage(named: "IMG_0114.jpg")!,
+            UIImage(named: "IMG_0115.jpg")!
+        ]
     ]
 ]
 
@@ -42,11 +61,13 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("ProjectCell") as! ProjectTableViewCell
-        cell.projectTitle.text = "Arc \(indexPath.row)"
-        var test = projects[indexPath.row]["background"] as! String?
+        cell.projectTitle.text = "Arc \(indexPath.row+1)"
+        var test = projects[indexPath.row]["background"] as! NSArray?
         print(test!)
         if test != nil {
-           cell.projectImageView.image = UIImage(named: test!)
+           cell.projectImageView.animationImages = test! as! [UIImage]
+            cell.projectImageView.animationDuration = 2
+            cell.projectImageView.startAnimating()
         }
 //        cell.backgroundColor = UIColor(red: 230/255, green: 240/255, blue: 255/255, alpha: 1)
         
@@ -64,9 +85,9 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
         // Get in touch with the DetailViewController
         let detailViewController = segue.destinationViewController as! ProjectViewController
         // Pass on the data to the Detail ViewController by setting it's indexPathRow value
-        let newImage = projects[index!]["background"] as! String?
+        let newImage = projects[index!]["background"] as! NSArray?
         if newImage != nil {
-            detailViewController.imageHolder = UIImage(named: newImage!)
+            detailViewController.imageHolder = newImage! as! [UIImage]
         }
     }
 

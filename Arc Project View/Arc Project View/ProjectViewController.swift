@@ -11,7 +11,7 @@ import UIKit
 //var imageHolder: UIImage!
 
 class ProjectViewController: UIViewController {
-    var imageHolder: UIImage!
+    var imageHolder: [UIImage] = []
     @IBOutlet weak var fullImageView: UIImageView!
     @IBOutlet weak var projectNameField: UITextField!
     @IBOutlet weak var openPanelButton: UIButton!
@@ -28,7 +28,9 @@ class ProjectViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullImageView.image = imageHolder
+        fullImageView.animationImages = imageHolder
+        fullImageView.animationDuration = 2
+        fullImageView.startAnimating()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
