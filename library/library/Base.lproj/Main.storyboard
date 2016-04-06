@@ -134,6 +134,7 @@
                     <navigationItem key="navigationItem" id="UJv-pf-zHG"/>
                     <connections>
                         <outlet property="openPanelButton" destination="Psz-43-hvC" id="KtW-lV-PcM"/>
+                        <outlet property="projectImageView" destination="t0h-qZ-FM1" id="n98-Ah-Iip"/>
                         <outlet property="projectNameField" destination="ncf-vd-rMj" id="RFJ-Pg-819"/>
                         <segue destination="0fm-5w-weo" kind="modal" identifier="panelSegue" id="WJN-26-Zep"/>
                     </connections>
@@ -218,7 +219,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q6L-au-u0T">
-                                <rect key="frame" x="10" y="10" width="60" height="40"/>
+                                <rect key="frame" x="0.0" y="20" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back"/>
                                 <connections>

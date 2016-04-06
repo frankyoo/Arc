@@ -10,6 +10,7 @@ import UIKit
 
 class ProjectViewController: UIViewController {
 
+    @IBOutlet weak var projectImageView: UIImageView!
     @IBOutlet weak var projectNameField: UITextField!
     @IBOutlet weak var openPanelButton: UIButton!
     

@@ -8,19 +8,19 @@
 
 import UIKit
 import Parse
+var projects = [
+    [
+        "title" : "row 1",
+        "background" : "test_image.png"
+        
+    ],[
+        "title" : "row 2",
+        "background" : "test_image2.png"
+    ]
+]
 
 class LibraryViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
-
-    var projects = [
-        [
-            "title" : "row 1",
-            "background" : "test_image.png"
-        
-        ],[
-            "title" : "row 2",
-            "background" : "test_image2.png"
-        ]
-    ]
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,18 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
         // Configure YourCustomCell using the outlets that you've defined.
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Get the index path from the cell that was tapped
+        let indexPath = tableView.indexPathForSelectedRow
+        // Get the Row of the Index Path and set as index
+        let index = indexPath?.row
+        // Get in touch with the DetailViewController
+        let detailViewController = segue.destinationViewController as! ProjectViewController
+        // Pass on the data to the Detail ViewController by setting it's indexPathRow value
+        detailViewController.projectImageView.image = projects[index!]["background"] as! UIImage
     }
 
     /*
