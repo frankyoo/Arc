@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="OQp-dN-yrf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gu7-QG-RtO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,11 +18,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="250" id="7FK-eL-esF" customClass="ProjectTableViewCell" customModule="library" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="250" id="7FK-eL-esF" customClass="ProjectTableViewCell" customModule="library" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="7FK-eL-esF" id="0J7-CT-dOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="249.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bZd-dv-hVa">
@@ -41,6 +41,7 @@
                                         <connections>
                                             <outlet property="projectImageView" destination="bZd-dv-hVa" id="MaA-7L-gMR"/>
                                             <outlet property="projectTitle" destination="Ykm-s3-MyE" id="62M-0n-uH9"/>
+                                            <segue destination="eUa-mf-Erg" kind="push" id="wk8-fe-Fuj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -60,7 +61,7 @@
         <!--Arc-->
         <scene sceneID="5bF-zZ-AiS">
             <objects>
-                <navigationController title="Arc" automaticallyAdjustsScrollViewInsets="NO" id="gu7-QG-RtO" sceneMemberID="viewController">
+                <navigationController title="Arc" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gu7-QG-RtO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X73-1s-Z5Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -100,6 +101,9 @@
                                 <rect key="frame" x="30" y="498" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add"/>
+                                <connections>
+                                    <segue destination="OQp-dN-yrf" kind="modal" id="XQY-Vu-Pes"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project name" textAlignment="center" minimumFontSize="17" id="ncf-vd-rMj">
                                 <rect key="frame" x="68" y="25" width="184" height="30"/>
@@ -127,6 +131,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UJv-pf-zHG"/>
                     <connections>
                         <outlet property="openPanelButton" destination="Psz-43-hvC" id="KtW-lV-PcM"/>
                         <outlet property="projectNameField" destination="ncf-vd-rMj" id="RFJ-Pg-819"/>
@@ -145,7 +150,7 @@
         <!--Panel View Controller-->
         <scene sceneID="YfL-sk-N7O">
             <objects>
-                <viewController id="0fm-5w-weo" customClass="panelViewController" customModule="library" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="0fm-5w-weo" customClass="panelViewController" customModule="library" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VH2-4V-rb7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,6 +223,7 @@
                                 <state key="normal" image="back"/>
                                 <connections>
                                     <action selector="didPressBack:" destination="eUa-mf-Erg" eventType="touchUpInside" id="BPl-j3-Ftg"/>
+                                    <segue destination="eUa-mf-Erg" kind="modal" modalTransitionStyle="crossDissolve" id="JqU-Mt-jyb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeM-sl-i0b">
@@ -282,4 +288,7 @@
         <image name="picker_arc_under_selected" width="36" height="36"/>
         <image name="share" width="22" height="35"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JqU-Mt-jyb"/>
+    </inferredMetricsTieBreakers>
 </document>

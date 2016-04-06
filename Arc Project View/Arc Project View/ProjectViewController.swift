@@ -57,6 +57,7 @@ class ProjectViewController: UIViewController {
     }
     
     @IBAction func didPressBack(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
     }
     
     @IBAction func didPressPanelOpen(sender: AnyObject) {
