@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="282"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="7FK-eL-esF" id="0J7-CT-dOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="282"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="281"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bZd-dv-hVa">
@@ -222,7 +222,7 @@
                             <view contentMode="scaleToFill" id="PbM-fe-RRq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.74300307050000003" green="0.90234106650000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1cr-gf-Rkt" userLabel="Opacity View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -305,6 +305,6 @@
         <image name="share" width="22" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wk8-fe-Fuj"/>
+        <segue reference="W97-Rd-9p3"/>
     </inferredMetricsTieBreakers>
 </document>

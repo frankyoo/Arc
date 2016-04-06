@@ -62,6 +62,11 @@ class ProjectViewController: UIViewController {
     func loadImageArray() {
         fullImageView.animationImages = imageHolder
         fullImageView.animationDuration = 2
+        let customAnimation = CABasicAnimation()
+        customAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+//        fullImageView.animationDidStart(
+//            customAnimation
+//        )
         fullImageView.startAnimating()
     }
 
