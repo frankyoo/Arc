@@ -22,7 +22,9 @@ class FadeTransition: BaseTransition {
     
     override func dismissTransition(containerView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
         
-        let viewController = toViewController as! ProjectViewController
+//        let viewController = toViewController as! ProjectViewController
+        let navViewController = toViewController as! UINavigationController
+        let viewController = navViewController.topViewController as! ProjectViewController
 //        viewController.openPanelButton.alpha = 1
 //        fromViewController.view.alpha = 1
         UIView.animateWithDuration(duration, animations: {

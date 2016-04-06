@@ -22,7 +22,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="7FK-eL-esF" id="0J7-CT-dOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="249.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bZd-dv-hVa">
@@ -84,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="photo_averie" id="t0h-qZ-FM1">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo_averie" id="t0h-qZ-FM1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
@@ -133,8 +133,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="UJv-pf-zHG"/>
                     <connections>
+                        <outlet property="fullImageView" destination="t0h-qZ-FM1" id="fcb-BY-gps"/>
                         <outlet property="openPanelButton" destination="Psz-43-hvC" id="KtW-lV-PcM"/>
-                        <outlet property="projectImageView" destination="t0h-qZ-FM1" id="n98-Ah-Iip"/>
                         <outlet property="projectNameField" destination="ncf-vd-rMj" id="RFJ-Pg-819"/>
                         <segue destination="0fm-5w-weo" kind="modal" identifier="panelSegue" id="WJN-26-Zep"/>
                     </connections>
@@ -151,7 +151,7 @@
         <!--Panel View Controller-->
         <scene sceneID="YfL-sk-N7O">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="0fm-5w-weo" customClass="panelViewController" customModule="library" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="0fm-5w-weo" customClass="panelViewController" customModule="library" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VH2-4V-rb7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,7 @@
         <!--Camera View Controller-->
         <scene sceneID="J7f-T9-U5B">
             <objects>
-                <viewController id="OQp-dN-yrf" customClass="CameraViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="OQp-dN-yrf" customClass="CameraViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nuU-mX-b63">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,8 +223,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back"/>
                                 <connections>
+                                    <action selector="backTap:" destination="OQp-dN-yrf" eventType="touchUpInside" id="Ahq-ds-YZf"/>
                                     <action selector="didPressBack:" destination="eUa-mf-Erg" eventType="touchUpInside" id="BPl-j3-Ftg"/>
-                                    <segue destination="eUa-mf-Erg" kind="modal" modalTransitionStyle="crossDissolve" id="JqU-Mt-jyb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EeM-sl-i0b">
@@ -289,7 +289,4 @@
         <image name="picker_arc_under_selected" width="36" height="36"/>
         <image name="share" width="22" height="35"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="JqU-Mt-jyb"/>
-    </inferredMetricsTieBreakers>
 </document>

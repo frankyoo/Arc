@@ -131,6 +131,9 @@ class CameraViewController: UIViewController, PBJVisionDelegate {
 //        }
     }
     
+    @IBAction func backTap(sender: UIButton) {
+        dismissViewControllerAnimated(false, completion: nil)
+    }
     @IBAction func onFlipButton(sender: AnyObject) {
         if vision.cameraDevice == PBJCameraDevice.Front {
             vision.cameraDevice = PBJCameraDevice.Back

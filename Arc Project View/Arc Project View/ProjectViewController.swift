@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ProjectViewController: UIViewController {
+//var imageHolder: UIImage!
 
-    @IBOutlet weak var projectImageView: UIImageView!
+class ProjectViewController: UIViewController {
+    var imageHolder: UIImage!
+    @IBOutlet weak var fullImageView: UIImageView!
     @IBOutlet weak var projectNameField: UITextField!
     @IBOutlet weak var openPanelButton: UIButton!
     
@@ -26,7 +28,7 @@ class ProjectViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fullImageView.image = imageHolder
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)

@@ -42,7 +42,7 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("ProjectCell") as! ProjectTableViewCell
-        cell.projectTitle.text = "This is \(indexPath.row)"
+        cell.projectTitle.text = "Arc \(indexPath.row)"
         var test = projects[indexPath.row]["background"] as! String?
         print(test!)
         if test != nil {
@@ -64,7 +64,10 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
         // Get in touch with the DetailViewController
         let detailViewController = segue.destinationViewController as! ProjectViewController
         // Pass on the data to the Detail ViewController by setting it's indexPathRow value
-        detailViewController.projectImageView.image = projects[index!]["background"] as! UIImage
+        let newImage = projects[index!]["background"] as! String?
+        if newImage != nil {
+            detailViewController.imageHolder = UIImage(named: newImage!)
+        }
     }
 
     /*
