@@ -8,17 +8,17 @@
         <!--Arc-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LibraryViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LibraryViewController" customModule="Arc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="282" sectionHeaderHeight="28" sectionFooterHeight="28" id="ruE-Fx-ahw">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="282" id="7FK-eL-esF" customClass="ProjectTableViewCell" customModule="library" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProjectCell" rowHeight="282" id="7FK-eL-esF" customClass="ProjectTableViewCell" customModule="Arc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="282"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="7FK-eL-esF" id="0J7-CT-dOg">
@@ -26,13 +26,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bZd-dv-hVa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="281"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ykm-s3-MyE">
-                                                    <rect key="frame" x="8" y="151" width="131" height="30"/>
+                                                    <rect key="frame" x="20" y="235" width="131" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -46,8 +46,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" id="HN9-vF-VlE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="arc_logo" id="uC8-nc-CqU">
+                                        <rect key="frame" x="155" y="23" width="64" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.21568627450980393" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.21568627450980393" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Arc" id="V3P-LK-ZvK"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -81,18 +92,22 @@
         <!--Project View Controller-->
         <scene sceneID="SsW-i6-cga">
             <objects>
-                <viewController id="eUa-mf-Erg" customClass="ProjectViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eUa-mf-Erg" customClass="ProjectViewController" customModule="Arc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90t-tB-0Q9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="photo_averie" id="t0h-qZ-FM1">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="gradient" id="t0h-qZ-FM1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="y4l-tG-TnI" appends="YES" id="fhB-Ow-blx"/>
                                 </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="gradient" id="IvP-ub-4Ww">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1SA-pi-3Bm">
                                 <rect key="frame" x="285" y="590" width="50" height="50"/>
@@ -115,19 +130,11 @@
                                     <action selector="didPressBack:" destination="eUa-mf-Erg" eventType="touchUpInside" id="543-xz-zxS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Psz-43-hvC">
-                                <rect key="frame" x="169" y="595" width="36" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arc_over"/>
-                                <connections>
-                                    <action selector="didPressPanelOpen:" destination="eUa-mf-Erg" eventType="touchUpInside" id="BoF-qb-Mak"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Project name" textAlignment="center" minimumFontSize="17" id="ncf-vd-rMj">
                                 <rect key="frame" x="74" y="24" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -135,6 +142,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Psz-43-hvC">
+                                <rect key="frame" x="169" y="596" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arc_over"/>
+                                <connections>
+                                    <action selector="didPressPanelOpen:" destination="eUa-mf-Erg" eventType="touchUpInside" id="BoF-qb-Mak"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -160,7 +175,7 @@
         <!--Panel View Controller-->
         <scene sceneID="YfL-sk-N7O">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="0fm-5w-weo" customClass="panelViewController" customModule="library" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="0fm-5w-weo" customClass="panelViewController" customModule="Arc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VH2-4V-rb7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +229,7 @@
         <!--Camera View Controller-->
         <scene sceneID="J7f-T9-U5B">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="OQp-dN-yrf" customClass="CameraViewController" customModule="library" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="OQp-dN-yrf" customClass="CameraViewController" customModule="Arc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nuU-mX-b63">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,18 +299,19 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="690" y="1002"/>
+            <point key="canvasLocation" x="736.5" y="1186.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="add" width="30" height="30"/>
+        <image name="arc_logo" width="90" height="39"/>
         <image name="arc_over" width="32" height="32"/>
         <image name="arc_panel" width="192" height="136"/>
         <image name="back" width="16" height="14"/>
         <image name="collapse" width="14" height="9"/>
         <image name="flip" width="64" height="61"/>
+        <image name="gradient" width="375" height="80"/>
         <image name="next" width="57" height="59"/>
-        <image name="photo_averie" width="320" height="568"/>
         <image name="picker_arc_over_default" width="36" height="36"/>
         <image name="picker_arc_over_selected" width="36" height="36"/>
         <image name="picker_arc_s_default" width="36" height="36"/>
@@ -305,6 +321,6 @@
         <image name="share" width="22" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W97-Rd-9p3"/>
+        <segue reference="wk8-fe-Fuj"/>
     </inferredMetricsTieBreakers>
 </document>

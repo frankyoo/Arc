@@ -11,6 +11,17 @@ import UIKit
 var imageHolder: [UIImage] = []
 var animation : CAKeyframeAnimation!
 
+func loadImageArray() {
+    animation = CAKeyframeAnimation(keyPath: "contents")
+    animation.calculationMode = kCAAnimationDiscrete
+    //        animation.timingFunction = kCAMediaTimingFunctionEaseInEaseOut
+    animation.duration = 2.5
+    animation.values = imageHolder.map {$0.CGImage as! AnyObject}
+    animation.repeatCount = Float.infinity
+    animation.removedOnCompletion = false
+    animation.fillMode = kCAFillModeForwards
+}
+
 class ProjectViewController: UIViewController {
 //    var imageHolder: [UIImage] = []
     @IBOutlet weak var fullImageView: UIImageView!
@@ -36,6 +47,7 @@ class ProjectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadImageArray()
+        fullImageView.layer.addAnimation(animation, forKey: "contents")
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
@@ -58,19 +70,6 @@ class ProjectViewController: UIViewController {
         
         // Adjust the transition duration. (seconds)
         fadeTransition.duration = 0.3
-    }
-    
-    func loadImageArray() {
-        animation = CAKeyframeAnimation(keyPath: "contents")
-        animation.calculationMode = kCAAnimationDiscrete
-//        animation.timingFunction = kCAMediaTimingFunctionEaseInEaseOut
-        animation.duration = 3
-        animation.values = imageHolder.map {$0.CGImage as! AnyObject}
-        animation.repeatCount = Float.infinity
-        animation.removedOnCompletion = false
-        animation.fillMode = kCAFillModeForwards
-        fullImageView.layer.addAnimation(animation, forKey: "contents")
-        
     }
 
     @IBAction func didTapBackground(sender: AnyObject) {
