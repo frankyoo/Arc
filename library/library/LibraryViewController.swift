@@ -8,9 +8,9 @@
 
 import UIKit
 import Parse
-var projects = [
+var projects: [NSMutableDictionary] = [
     [
-        "title" : "row 1",
+        "title" : "Team Arc",
         "background" : [
             UIImage(named: "teamarc1.jpg")!,
             UIImage(named: "teamarc2.jpg")!,
@@ -21,7 +21,18 @@ var projects = [
         ]
         
     ],[
-        "title" : "row 2",
+        "title" : "Food Coma",
+        "background" : [
+            UIImage(named: "food1.jpg")!,
+            UIImage(named: "food2.jpg")!,
+            UIImage(named: "food3.jpg")!,
+            UIImage(named: "food4.jpg")!,
+            UIImage(named: "food5.jpg")!,
+            UIImage(named: "food6.jpg")!,
+            UIImage(named: "food7.jpg")!
+        ]
+    ],[
+        "title" : "Hovering Feet",
         "background" : [
             UIImage(named: "IMG_0109.jpg")!,
             UIImage(named: "IMG_0110.jpg")!,
@@ -57,11 +68,10 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("ProjectCell") as! ProjectTableViewCell
-        cell.projectTitle.text = "Arc \(indexPath.row+1)"
+        cell.projectTitle.text = projects[indexPath.row]["title"] as! String?
 //        cell.backgroundColor = UIColor(red: 230/255, green: 240/255, blue: 255/255, alpha: 1)
         imageHolder = projects[indexPath.row]["background"] as! [UIImage]
-        loadImageArray()
-        cell.projectImageView.layer.addAnimation(animation, forKey: "contents")
+        loadImageArray(cell.projectImageView)
 //        var test = projects[indexPath.row]["background"] as! NSArray?
 //        print(test!)
 //        if test != nil {
@@ -82,11 +92,11 @@ class LibraryViewController: UIViewController,UITableViewDataSource, UITableView
         // Get the index path from the cell that was tapped
         let indexPath = tableView.indexPathForSelectedRow
         // Get the Row of the Index Path and set as index
-        let index = indexPath?.row
+        currentIndex = indexPath?.row
         // Get in touch with the DetailViewController
         let detailViewController = segue.destinationViewController as! ProjectViewController
         // Pass on the data to the Detail ViewController by setting it's indexPathRow value
-        let newImage = projects[index!]["background"] as! NSArray?
+        let newImage = projects[currentIndex!]["background"] as! NSArray?
         if newImage != nil {
             imageHolder = newImage! as! [UIImage]
         }

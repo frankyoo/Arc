@@ -10,8 +10,9 @@ import UIKit
 
 var imageHolder: [UIImage] = []
 var animation : CAKeyframeAnimation!
+var currentIndex: Int!
 
-func loadImageArray() {
+func loadImageArray(controller: UIImageView) {
     animation = CAKeyframeAnimation(keyPath: "contents")
     animation.calculationMode = kCAAnimationDiscrete
     //        animation.timingFunction = kCAMediaTimingFunctionEaseInEaseOut
@@ -20,10 +21,10 @@ func loadImageArray() {
     animation.repeatCount = Float.infinity
     animation.removedOnCompletion = false
     animation.fillMode = kCAFillModeForwards
+    controller.layer.addAnimation(animation, forKey: "contents")
 }
 
-class ProjectViewController: UIViewController {
-//    var imageHolder: [UIImage] = []
+class ProjectViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var fullImageView: UIImageView!
     @IBOutlet weak var projectNameField: UITextField!
     @IBOutlet weak var openPanelButton: UIButton!
@@ -38,19 +39,15 @@ class ProjectViewController: UIViewController {
         
     }
     
-//    override func viewWillAppear(animated: Bool) {
-//        fullImageView.animationImages = imageHolder
-//        fullImageView.animationDuration = 2
-//        fullImageView.startAnimating()
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadImageArray()
-        fullImageView.layer.addAnimation(animation, forKey: "contents")
+        loadImageArray(fullImageView)
+        projectNameField.text = projects[currentIndex]["title"] as! String?
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        self.projectNameField.delegate = self;
         
     }
     
@@ -78,10 +75,17 @@ class ProjectViewController: UIViewController {
         
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        print(textField.text)
+        projects[currentIndex]["title"] = "\(textField.text!)"
+        self.view.endEditing(true)
+        return false
+    }
+    
     @IBAction func addPhotoDidTap(sender: UIButton) {
         performSegueWithIdentifier("cameraSegue", sender: self)
     }
-    @IBAction func didPressBack(sender: AnyObject) {
+    @IBAction func didPressBack(sender: UIButton) {
         navigationController!.popViewControllerAnimated(true)
     }
     

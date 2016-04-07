@@ -30,7 +30,7 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ykm-s3-MyE">
-                                                    <rect key="frame" x="20" y="235" width="131" height="30"/>
+                                                    <rect key="frame" x="20" y="235" width="277" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -289,7 +289,7 @@
                         <outlet property="blurEffectView" destination="Fyv-Mp-Qkg" id="mj7-oD-7sX"/>
                         <outlet property="cameraView" destination="PbM-fe-RRq" id="Ipv-vb-1s5"/>
                         <outlet property="thumbnailView" destination="1cr-gf-Rkt" id="zDs-wL-FR4"/>
-                        <segue destination="eUa-mf-Erg" kind="modal" identifier="cameraCloseSegue" id="W97-Rd-9p3"/>
+                        <segue destination="eUa-mf-Erg" kind="modal" identifier="cameraCloseSegue" id="ouZ-Uz-Qa8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AN6-NH-mzI" sceneMemberID="firstResponder"/>
@@ -299,7 +299,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="736.5" y="1186.5"/>
+            <point key="canvasLocation" x="513.5" y="1148.5"/>
         </scene>
     </scenes>
     <resources>

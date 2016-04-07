@@ -21,7 +21,7 @@ class CloseCameraTransition: BaseTransition {
             fromViewController.view.alpha = 0
             imageHolder.appendContentsOf(camViewController.photoImages)
             print(imageHolder)
-            loadImageArray()
+            loadImageArray(viewController.fullImageView)
         }) { (finished: Bool) -> Void in
             self.finish()
         }
@@ -38,7 +38,7 @@ class CloseCameraTransition: BaseTransition {
             fromViewController.view.alpha = 0
             imageHolder.appendContentsOf(camViewController.photoImages)
             print(imageHolder)
-            loadImageArray()
+            loadImageArray(viewController.fullImageView)
         }) { (finished: Bool) -> Void in
             self.finish()
         }
